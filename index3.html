@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIST TATTOO STUDIO | Premium Residency</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Cinzel', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Garantia de aplicação das fontes */
+        h1, h2, h3, .font-display {
+            font-family: 'Cinzel', serif !important;
+        }
+        body, p, span, input, textarea, select, button {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* Custom Scrollbar Fina e Premium */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #222;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #c5a880;
+        }
+
+        /* Efeito de ruído sutil de fundo para textura de estúdio premium */
+        .bg-grain {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-[#0a0a0a] text-neutral-300 antialiased bg-grain">
+
+    <header class="fixed top-0 left-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-neutral-900/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
+            <a href="#" class="flex flex-col items-center tracking-[0.3em]">
+                <span class="text-2xl font-black text-white leading-none font-display">MIST</span>
+                <span class="text-[9px] text-[#c5a880] tracking-[0.5em] mt-1 font-bold">TATTOO</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-10 text-[11px] font-semibold tracking-[0.2em] uppercase text-neutral-400">
+                <a href="#home" class="hover:text-[#c5a880] text-white transition-colors">Início</a>
+                <a href="#studio" class="hover:text-[#c5a880] transition-colors">O Estúdio</a>
+                <a href="#artists" class="hover:text-[#c5a880] transition-colors">Artistas</a>
+                <a href="#contato" class="hover:text-[#c5a880] transition-colors">Agendamento</a>
+            </nav>
+
+            <a href="#contato" class="bg-[#c5a880] hover:bg-white text-black text-[10px] font-bold tracking-[0.15em] uppercase px-6 py-3 rounded transition-all duration-300">
+                Agendar Horário
+            </a>
+        </div>
+    </header>
+
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&q=80&w=1920')] bg-cover bg-center opacity-40"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-black"></div>
+        </div>
+
+        <div class="relative z-10 text-center max-w-4xl mx-auto px-4 space-y-6 mt-16">
+            <span class="text-[#c5a880] text-xs font-bold tracking-[0.4em] uppercase block">Galeria & Coletivo de Arte</span>
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-black text-white tracking-tight uppercase leading-none font-display">
+                Onde a Pele<br><span class="text-neutral-500 font-light">Se Torna Tela.</span>
+            </h1>
+            <p class="text-neutral-400 max-w-xl mx-auto text-xs sm:text-sm font-light leading-relaxed">
+                Nove tatuadores independentes de elite reunidos em um santuário minimalista e privado. Desça para explorar as vertentes.
+            </p>
+            <div class="pt-4">
+                <a href="#artists" class="bg-white text-black font-bold tracking-[0.15em] uppercase text-xs px-8 py-4 rounded hover:bg-[#c5a880] transition-all inline-block">
+                    Ver Portfólios dos Residentes
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="studio" class="py-32 bg-black border-t border-neutral-900/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-[#c5a880] text-xs font-bold tracking-[0.3em] uppercase block">A Experiência</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight uppercase font-display">Biossegurança e Luxo</h2>
+                    <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed font-light">
+                        Projetamos um espaço asséptico com climatização industrial, iluminação fotográfica calibrada e salas individuais para total privacidade. Cada agulha aberta é um ritual de precisão.
+                    </p>
+                </div>
+                <div class="lg:col-span-7 grid grid-cols-12 gap-4">
+                    <div class="col-span-7">
+                        <img src="https://images.unsplash.com/photo-1590247813693-5541d1c609fd?auto=format&fit=crop&q=80&w=800" class="w-full h-72 object-cover rounded grayscale opacity-50">
+                    </div>
+                    <div class="col-span-5 pt-8">
+                        <img src="https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?auto=format&fit=crop&q=80&w=600" class="w-full h-64 object-cover rounded grayscale opacity-40">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="artists" class="py-24 bg-[#0a0a0a] overflow-hidden">
+        
+        <div class="max-w-3xl mx-auto text-center mb-24 px-4 space-y-3">
+            <span class="text-[#c5a880] text-xs font-bold tracking-[0.3em] uppercase block">Artistas Residentes</span>
+            <h2 class="text-3xl sm:text-5xl font-black text-white uppercase tracking-tight font-display">Os 9 Mestres do Traço</h2>
+            <div class="w-12 h-[1px] bg-[#c5a880]/40 mx-auto my-4"></div>
+            <p class="text-neutral-400 text-xs font-light">
+                Cada faixa cromática abaixo expande-se por 100% da tela, isolando o universo autoral de cada especialista.
+            </p>
+        </div>
+
+        <div class="space-y-6">
+            
+            <div class="group relative w-full border-y border-neutral-900 bg-gradient-to-r from-[#121212] via-[#181818] to-[#121212] min-h-[340px] flex items-center transition-all duration-500 hover:border-neutral-700/50">
+                <div class="absolute inset-0 z-0 opacity-[0.04] group-hover:opacity-[0.07] transition-opacity duration-500 bg-[url('https://images.unsplash.com/photo-1590247813693-5541d1c609fd?auto=format&fit=crop&q=80&w=1200')] bg-cover bg-center"></div>
+                
+                <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-stretch gap-8 py-8 md:py-0 relative z-10">
+                    <div class="w-full md:w-1/4 min-h-[260px] md:min-h-full relative overflow-hidden rounded shadow-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600" alt="Eva Blackwork" class="object-cover w-full h-full grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                    </div>
+                    <div class="w-full md:w-3/4 flex flex-col justify-center space-y-5">
+                        <div class="flex flex-wrap items-center justify-between gap-4">
+                            <div>
+                                <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-[#c5a880] block mb-1">Especialista Residente</span>
+                                <h3 class="text-xl sm:text-2xl font-black text-white tracking-wide uppercase font-display">EVA BLACKWORK</h3>
+                            </div>
+                            <span class="text-[10px] font-mono uppercase tracking-widest text-neutral-400 bg-black/50 px-3 py-1 rounded border border-white/5">Ornamental & Dark Geometry</span>
+                        </div>
+                        <p class="text-xs text-neutral-400 max-w-2xl leading-relaxed font-light">
+                            Com mais de uma década de imersão no underground Europeu, Eva refinou uma técnica cirúrgica de aplicação de negro absoluto. Seus projetos fundem padrões geométricos sagrados com anatomia fluida, gerando peças exclusivas de altíssimo contraste e durabilidade atemporal.
+                        </p>
+                        <div class="pt-4 flex items-center justify-between border-t border-neutral-900/80">
+                            <div class="flex items-center gap-4 text-neutral-500">
+                                <a href="#" class="hover:text-[#c5a880] transition-colors text-sm" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="hover:text-[#c5a880] transition-colors text-sm" title="Pinterest"><i class="fab fa-pinterest"></i></a>
+                                <a href="#" class="hover:text-[#c5a880] transition-colors text-sm" title="Behance"><i class="fab fa-behance"></i></a>
+                            </div>
+                            <a href="#contato" class="bg-black hover:bg-[#c5a880] border border-neutral-800 text-neutral-300 hover:text-black text-[10px] font-bold tracking-widest uppercase px-5 py-2.5 rounded transition-all">Orçamento & Briefing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative w-full border-y border-neutral-900 bg-gradient-to-r from-[#0d0f12] via-[#13161c] to-[#0d0f12] min-h-[340px] flex items-center transition-all duration-500 hover:border-neutral-700/50">
+                <div class="absolute inset-0 z-0 opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500 bg-[url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=1200')] bg-cover bg-center"></div>
+                
+                <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-stretch gap-8 py-8 md:py-0 relative z-10">
+                    <div class="w-full md:w-1/4 min-h-[260px] md:min-h-full relative overflow-hidden rounded shadow-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600" alt="Leo Realism" class="object-cover w-full h-full grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                    </div>
+                    <div class="w-full md:w-3/4 flex flex-col justify-center space-y-5">
+                        <div class="flex flex-wrap items-center justify-between gap-4">
+                            <div>
+                                <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-neutral-400 block mb-1">Especialista Residente</span>
+                                <h3 class="text-xl sm:text-2xl font-black text-white tracking-wide uppercase font-display">LEO REALISM</h3>
+                            </div>
+                            <span class="text-[10px] font-mono uppercase tracking-widest text-[#c5a880] bg-black/50 px-3 py-1 rounded border border-[#c5a880]/20">Hiper-Realismo Preto e Cinza</span>
+                        </div>
+                        <p class="text-xs text-neutral-400 max-w-2xl leading-relaxed font-light">
+                            Reconhecido internacionalmente por sua precisão fotográfica microscópica, Leo esculpe texturas de pele, micro-detalhes de olhos e iluminação tridimensional diretamente na derme. Suas peças são tratadas como obras de galeria contemporânea.
+                        </p>
+                        <div class="pt-4 flex items-center justify-between border-t border-neutral-900/80">
+                            <div class="flex items-center gap-4 text-neutral-500">
+                                <a href="#" class="hover:text-[#c5a880] transition-colors text-sm" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="hover:text-[#c5a880] transition-colors text-sm" title="YouTube"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="hover:text-[#c5a880] transition-colors text-sm" title="Vimeo"><i class="fab fa-vimeo-v"></i></a>
+                            </div>
+                            <a href="#contato" class="bg-black hover:bg-[#c5a880] border border-neutral-800 text-neutral-300 hover:text-black text-[10px] font-bold tracking-widest uppercase px-5 py-2.5 rounded transition-all">Orçamento & Briefing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative w-full border-y border-neutral-900 bg-gradient-to-r from-[#091210] via-[#0e1d19] to-[#091210] min-h-[340px] flex items-center transition-all duration-500 hover:border-neutral-700/50">
+                <div class="absolute inset-0 z-0 opacity-[0.04] group-hover:opacity-[0.08] transition-opacity duration-500 bg-[url('https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?auto=format&fit=crop&q=80&w=1200')] bg-cover bg-center"></div>
+                
+                <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-stretch gap-8 py-8 md:py-0 relative z-10">
+                    <div class="w-full md:w-1/4 min-h-[260px] md:min-h-full relative overflow-hidden rounded shadow-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=600" alt="Ana Neo-Trad" class="object-cover w-full h-full grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                    </div>
+                    <div class="w-full md:w-3/4 flex flex-col justify-center space-y-5">
+                        <div class="flex flex-wrap items-center justify-between gap-4">
+                            <div>
+                                <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-emerald-500 block mb-1">Especialista Residente</span>
+                                <h3 class="text-xl sm:text-2xl font-black text-white tracking-wide uppercase font-display">ANA NEO-TRAD</h3>
+                            </div>
+                            <span class="text-[10px] font-mono uppercase tracking-widest text-emerald-400 bg-black/50 px-3 py-1 rounded border border-emerald-900/30">Ilustração & Neo Tradicional</span>
+                        </div>
+                        <p class="text-xs text-neutral-400 max-w-2xl leading-relaxed font-light">
+                            Graduada em Belas Artes, Ana traz para o estúdio uma reinterpretação luxuosa da Art Nouveau. Seu trabalho combina linhas de contorno expressivas com paletas outonais ricas, retratando elementos botânicos e alegorias místicas com maestria ilustrativa singular.
+                        </p>
+                        <div class="pt-4 flex items-center justify-between border-t border-neutral-900/80">
+                            <div class="flex items-center gap-4 text-neutral-500">
+                                <a href="#" class="hover:text-emerald-400 transition-colors text-sm" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="hover:text-emerald-400 transition-colors text-sm" title="ArtStation"><i class="fab fa-artstation"></i></a>
+                                <a href="#" class="hover:text-emerald-400 transition-colors text-sm" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                            <a href="#contato" class="bg-black hover:bg-emerald-500 border border-neutral-800 text-neutral-300 hover:text-black text-[10px] font-bold tracking-widest uppercase px-5 py-2.5 rounded transition-all">Orçamento & Briefing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative w-full border-y border-neutral-900 bg-gradient-to-r from-[#160a0a] via-[#241111] to-[#160a0a] min-h-[340px] flex items-center transition-all duration-500 hover:border-neutral-700/50">
+                <div class="absolute inset-0 z-0 opacity-[0.04] group-hover:opacity-[0.07] transition-opacity duration-500 bg-[url('https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&q=80&w=1200')] bg-cover bg-center"></div>
+                
+                <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-stretch gap-8 py-8 md:py-0 relative z-10">
+                    <div class="w-full md:w-1/4 min-h-[260px] md:min-h-full relative overflow-hidden rounded shadow-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=600" alt="Marcos Old School" class="object-cover w-full h-full grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                    </div>
+                    <div class="w-full md:w-3/4 flex flex-col justify-center space-y-5">
+                        <div class="flex flex-wrap items-center justify-between gap-4">
+                            <div>
+                                <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-red-400 block mb-1">Especialista Residente</span>
+                                <h3 class="text-xl sm:text-2xl font-black text-white tracking-wide uppercase font-display">MARCOS OLD SCHOOL</h3>
+                            </div>
+                            <span class="text-[10px] font-mono uppercase tracking-widest text-red-400 bg-black/50 px-3 py-1 rounded border border-red-900/30">Traditional American</span>
+                        </div>
+                        <p class="text-xs text-neutral-400 max-w-2xl leading-relaxed font-light">
+                            Preservando a herança clássica da tatuagem ocidental, Marcos executa traços sólidos e pigmentação pura. Suas obras contam com o rigor técnico tradicional que envelhece com perfeita nitidez, mantendo vivos os ícones históricos do estilo marítimo e militar do século passado.
+                        </p>
+                        <div class="pt-4 flex items-center justify-between border-t border-neutral-900/80">
+                            <div class="flex items-center gap-4 text-neutral-500">
+                                <a href="#" class="hover:text-red-400 transition-colors text-sm" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="hover:text-red-400 transition-colors text-sm" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="hover:text-red-400 transition-colors text-sm" title="Linktree"><i class="fas fa-link"></i></a>
+                            </div>
+                            <a href="#contato" class="bg-black hover:bg-red-600 border border-neutral-800 text-neutral-300 hover:text-white text-[10px] font-bold tracking-widest uppercase px-5 py-2.5 rounded transition-all">Orçamento & Briefing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative w-full border-y border-neutral-900 bg-gradient-to-r from-[#14110b] via-[#201b12] to-[#14110b] min-h-[340px] flex items-center transition-all duration-500 hover:border-neutral-700/50">
+                <div class="absolute inset-0 z-0 opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500 bg-[url('https://images.unsplash.com/photo-1590247813693-5541d1c609fd?auto=format&fit=crop&q=80&w=1200')] bg-cover bg-center"></div>
+                
+                <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-stretch gap-8 py-8 md:py-0 relative z-10">
+                    <div class="w-full md:w-1/4 min-h-[260px] md:min-h-full relative overflow-hidden rounded shadow-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?auto=format&fit=crop&q=80&w=600" alt="Chris Japanese" class="object-cover w-full h-full grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                    </div>
+                    <div class="w-full md:w-3/4 flex flex-col justify-center space-y-5">
+                        <div class="flex flex-wrap items-center justify-between gap-4">
+                            <div>
+                                <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-amber-500 block mb-1">Especialista Residente</span>
+                                <h3 class="text-xl sm:text-2xl font-black text-white tracking-wide uppercase font-display">CHRIS JAPANESE</h3>
+                            </div>
+                            <span class="text-[10px] font-mono uppercase tracking-widest text-amber-300 bg-black/50 px-3 py-1 rounded border border-amber-900/30">Irezumi Horimono</span>
+                        </div>
+                        <p class="text-xs text-neutral-400 max-w-2xl leading-relaxed font-light">
+                            Chris dedica sua vida ao estudo da iconografia e folclore oriental antigo. Focado em grandes fechamentos anatômicos, o artista projeta dragões imperiais, carpas e divindades perfeitamente integrados à musculatura humana, respeitando as regras estritas da escola Horimono.
+                        </p>
+                        <div class="pt-4 flex items-center justify-between border-t border-neutral-900/80">
+                            <div class="flex items-center gap-4 text-neutral-500">
+                                <a href="#" class="hover:text-amber-500 transition-colors text-sm" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="hover:text-amber-500 transition-colors text-sm" title="Tumblr"><i class="fab fa-tumblr"></i></a>
+                                <a href="#" class="hover:text-amber-500 transition-colors text-sm" title="Website"><i class="fas fa-globe"></i></a>
+                            </div>
+                            <a href="#contato" class="bg-black hover:bg-amber-500 hover:text-black border border-neutral-800 text-neutral-300 text-[10px] font-bold tracking-widest uppercase px-5 py-2.5 rounded transition-all">Orçamento & Briefing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative w-full border-y border-neutral-900 bg-gradient-to-r from-[#0f0a16] via-[#191124] to-[#0f0a16] min-h-[340px] flex items-center transition-all duration-500 hover:border-neutral-700/50">
+                <div class="absolute inset-0 z-0 opacity-[0.05] group-hover:opacity-[0.08] transition-opacity duration-500 bg-[url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1200')] bg-cover bg-center"></div>
+                
+                <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-stretch gap-8 py-8 md:py-0 relative z-10">
+                    <div class="w-full md:w-1/4 min-h-[260px] md:min-h-full relative overflow-hidden rounded shadow-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&衰=600" alt="Sofia Watercolor" class="object-cover w-full h-full grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                    </div>
+                    <div class="w-full md:w-3/4 flex flex-col justify-center space-y-5">
+                        <div class="flex flex-wrap items-center justify-between gap-4">
+                            <div>
+                                <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-purple-400 block mb-1">Especialista Residente</span>
+                                <h3 class="text-xl sm:text-2xl font-black text-white tracking-wide uppercase font-display">SOFIA WATERCOLOR</h3>
+                            </div>
+                            <span class="text-[10px] font-mono uppercase tracking-widest text-purple-300 bg-black/50 px-3 py-1 rounded border border-purple-900/30">Abstract Fluid & Color Splash</span>
+                        </div>
+                        <p class="text-xs text-neutral-400 max-w-2xl leading-relaxed font-light">
+                            Quebrando a rigidez dos contornos pretos, Sofia emula a fluidez das tintas à base de água diretamente sobre a pele. Seus gradientes vibrantes e manchas orgânicas abstratas criam uma ilusão impecável de telas pintadas a pincel, carregadas de dinamismo poético.
+                        </p>
+                        <div class="pt-4 flex items-center justify-between border-t border-neutral-900/80">
+                            <div class="flex items-center gap-4 text-neutral-500">
+                                <a href="#" class="hover:text-purple-400 transition-colors text-sm" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="hover:text-purple-400 transition-colors text-sm" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                                <a href="#" class="hover:text-purple-400 transition-colors text-sm" title="Flickr"><i class="fab fa-flickr"></i></a>
+                            </div>
+                            <a href="#contato" class="bg-black hover:bg-purple-600 border border-neutral-800 text-neutral-300 text-[10px] font-bold tracking-widest uppercase px-5 py-2.5 rounded transition-all">Orçamento & Briefing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative w-full border-y border-neutral-900 bg-gradient-to-r from-[#121212] via-[#1c1c1c] to-[#121212] min-h-[340px] flex items-center transition-all duration-500 hover:border-neutral-700/50">
+                <div class="absolute inset-0 z-0 opacity-[0.04] group-hover:opacity-[0.07] transition-opacity duration-500 bg-[url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=1200')] bg-cover bg-center"></div>
+                
+                <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-stretch gap-8 py-8 md:py-0 relative z-10">
+                    <div class="w-full md:w-1/4 min-h-[260px] md:min-h-full relative overflow-hidden rounded shadow-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=600" alt="Victor Dotwork" class="object-cover w-full h-full grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                    </div>
+                    <div class="w-full md:w-3/4 flex flex-col justify-center space-y-5">
+                        <div class="flex flex-wrap items-center justify-between gap-4">
+                            <div>
+                                <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-neutral-400 block mb-1">Especialista Residente</span>
+                                <h3 class="text-xl sm:text-2xl font-black text-white tracking-wide uppercase font-display">VICTOR DOT WORK</h3>
+                            </div>
+                            <span class="text-[10px] font-mono uppercase tracking-widest text-white bg-black/50 px-3 py-1 rounded border border-white/10">Pontilhismo & Sacred Geometry</span>
+                        </div>
+                        <p class="text-xs text-neutral-400 max-w-2xl leading-relaxed font-light">
+                            Com paciência matemática, Victor constrói complexas ilusões de ótica e mandalas tridimensionais ponto a ponto. Utilizando calibragem precisa de profundidade de agulha, ele desenvolve gradientes suaves e texturas ricas exclusivamente através de técnicas avançadas de pontilhismo.
+                        </p>
+                        <div class="pt-4 flex items-center justify-between border-t border-neutral-900/80">
+                            <div class="flex items-center gap-4 text-neutral-500">
+                                <a href="#" class="hover:text-white transition-colors text-sm" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="hover:text-white transition-colors text-sm" title="Vimeo"><i class="fab fa-vimeo-v"></i></a>
+                                <a href="#" class="hover:text-white transition-colors text-sm" title="Behance"><i class="fab fa-behance"></i></a>
+                            </div>
+                            <a href="#contato" class="bg-black hover:bg-white hover:text-black border border-neutral-800 text-neutral-300 text-[10px] font-bold tracking-widest uppercase px-5 py-2.5 rounded transition-all">Orçamento & Briefing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative w-full border-y border-neutral-900 bg-gradient-to-r from-[#14120e] via-[#211e17] to-[#14120e] min-h-[340px] flex items-center transition-all duration-500 hover:border-neutral-700/50">
+                <div class="absolute inset-0 z-0 opacity-[0.04] group-hover:opacity-[0.07] transition-opacity duration-500 bg-[url('https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=1200')] bg-cover bg-center"></div>
+                
+                <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-stretch gap-8 py-8 md:py-0 relative z-10">
+                    <div class="w-full md:w-1/4 min-h-[260px] md:min-h-full relative overflow-hidden rounded shadow-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=600" alt="Luna Fine Line" class="object-cover w-full h-full grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                    </div>
+                    <div class="w-full md:w-3/4 flex flex-col justify-center space-y-5">
+                        <div class="flex flex-wrap items-center justify-between gap-4">
+                            <div>
+                                <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-[#c5a880] block mb-1">Especialista Residente</span>
+                                <h3 class="text-xl sm:text-2xl font-black text-white tracking-wide uppercase font-display">LUNA FINE LINE</h3>
+                            </div>
+                            <span class="text-[10px] font-mono uppercase tracking-widest text-[#c5a880] bg-black/50 px-3 py-1 rounded border border-[#c5a880]/30">Traço Fino Minimalista</span>
+                        </div>
+                        <p class="text-xs text-neutral-400 max-w-2xl leading-relaxed font-light">
+                            Luna é mestre em micro-tatuagens, caligrafias anatômicas sutis e ilustrações botânicas efetuadas com agulhas personalizadas de espessura única de 0.15mm. Sua assinatura visual preza pelo luxo da sobriedade e elegância impecável de traços fluidos.
+                        </p>
+                        <div class="pt-4 flex items-center justify-between border-t border-neutral-900/80">
+                            <div class="flex items-center gap-4 text-neutral-500">
+                                <a href="#" class="hover:text-[#c5a880] transition-colors text-sm" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="hover:text-[#c5a880] transition-colors text-sm" title="Pinterest"><i class="fab fa-pinterest"></i></a>
+                                <a href="#" class="hover:text-[#c5a880] transition-colors text-sm" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                            <a href="#contato" class="bg-black hover:bg-[#c5a880] hover:text-black border border-neutral-800 text-neutral-300 text-[10px] font-bold tracking-widest uppercase px-5 py-2.5 rounded transition-all">Orçamento & Briefing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative w-full border-y border-neutral-900 bg-gradient-to-r from-[#1c0808] via-[#290f0f] to-[#1c0808] min-h-[340px] flex items-center transition-all duration-500 hover:border-neutral-700/50">
+                <div class="absolute inset-0 z-0 opacity-[0.05] group-hover:opacity-[0.08] transition-opacity duration-500 bg-[url('https://images.unsplash.com/photo-1504257404792-7a552253755f?auto=format&fit=crop&q=80&w=1200')] bg-cover bg-center"></div>
+                
+                <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-stretch gap-8 py-8 md:py-0 relative z-10">
+                    <div class="w-full md:w-1/4 min-h-[260px] md:min-h-full relative overflow-hidden rounded shadow-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1504257404792-7a552253755f?auto=format&fit=crop&q=80&w=600" alt="Gabriel Trash" class="object-cover w-full h-full grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                    </div>
+                    <div class="w-full md:w-3/4 flex flex-col justify-center space-y-5">
+                        <div class="flex flex-wrap items-center justify-between gap-4">
+                            <div>
+                                <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-red-500 block mb-1">Especialista Residente</span>
+                                <h3 class="text-xl sm:text-2xl font-black text-white tracking-wide uppercase font-display">GABRIEL TRASH</h3>
+                            </div>
+                            <span class="text-[10px] font-mono uppercase tracking-widest text-red-500 bg-black/50 px-3 py-1 rounded border border-red-900/40">Chaos Collage & Abstract Realism</span>
+                        </div>
+                        <p class="text-xs text-neutral-400 max-w-2xl leading-relaxed font-light">
+                            Gabriel domina a fusão do caos organizado de colagens tipográficas industriais com retratos hiper-realistas preto e cenza. Cada peça recebe splashes de vermelho escarlate sólido e denso, provocando composições conceituais de altíssima agressividade visual e apelo moderno.
+                        </p>
+                        <div class="pt-4 flex items-center justify-between border-t border-neutral-900/40">
+                            <div class="flex items-center gap-4 text-neutral-500">
+                                <a href="#" class="hover:text-red-500 transition-colors text-sm" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="hover:text-red-500 transition-colors text-sm" title="ArtStation"><i class="fab fa-artstation"></i></a>
+                                <a href="#" class="hover:text-red-500 transition-colors text-sm" title="YouTube"><i class="fab fa-youtube"></i></a>
+                            </div>
+                            <a href="#contato" class="bg-black hover:bg-red-600 border border-neutral-800 text-neutral-300 text-[10px] font-bold tracking-widest uppercase px-5 py-2.5 rounded transition-all">Orçamento & Briefing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contato" class="py-32 bg-black border-t border-neutral-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                
+                <div class="space-y-6">
+                    <span class="text-[#c5a880] text-xs font-bold tracking-[0.3em] uppercase block">Seletiva de Projetos</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight font-display">Agende sua Sessão</h2>
+                    <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed font-light max-w-md">
+                        Nossos artistas trabalham exclusivamente por agendamento prévio. Preencha a triagem técnica e nossa curadoria direcionará sua ideia para o mestre correspondente.
+                    </p>
+                </div>
+
+                <div class="bg-[#0c0c0c] p-8 sm:p-10 rounded border border-neutral-900/60 shadow-2xl">
+                    <form class="space-y-6" onsubmit="event.preventDefault(); alert('Briefing recebido com sucesso!');">
+                        <div>
+                            <label class="block text-[10px] uppercase tracking-widest text-neutral-400 font-bold mb-2">Seu Nome</label>
+                            <input type="text" required placeholder="Ex: Lucas Silva" class="w-full bg-black border border-neutral-800 focus:border-[#c5a880] rounded p-3.5 text-white text-sm outline-none transition-all">
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-[10px] uppercase tracking-widest text-neutral-400 font-bold mb-2">WhatsApp / Celular</label>
+                                <input type="tel" required placeholder="(11) 99999-0000" class="w-full bg-black border border-neutral-800 focus:border-[#c5a880] rounded p-3.5 text-white text-sm outline-none transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-[10px] uppercase tracking-widest text-neutral-400 font-bold mb-2">Estilo Pretendido</label>
+                                <select class="w-full bg-black border border-neutral-800 focus:border-[#c5a880] rounded p-3.5 text-neutral-400 text-sm outline-none transition-all cursor-pointer">
+                                    <option value="eva">Eva (Blackwork)</option>
+                                    <option value="leo">Leo (Realismo)</option>
+                                    <option value="ana">Ana (Neo-Tradicional)</option>
+                                    <option value="marcos">Marcos (Old School)</option>
+                                    <option value="chris">Chris (Oriental)</option>
+                                    <option value="sofia">Sofia (Aquarela)</option>
+                                    <option value="victor">Victor (Pontilhismo)</option>
+                                    <option value="luna">Luna (Fine Line)</option>
+                                    <option value="gabriel">Gabriel (Trash Polka)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-[10px] uppercase tracking-widest text-neutral-400 font-bold mb-2">Ideia do Design (Briefing)</label>
+                            <textarea rows="4" required placeholder="Descreva o tamanho estimado, local do corpo e elementos da arte..." class="w-full bg-black border border-neutral-800 focus:border-[#c5a880] rounded p-3.5 text-white text-sm outline-none transition-all"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-[#c5a880] hover:bg-white text-black font-bold text-xs tracking-widest uppercase py-4 rounded transition-all shadow-lg">
+                            Enviar Briefing do Projeto
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-12 border-t border-neutral-950 text-[11px] text-neutral-600 text-center">
+        <p>&copy; 2026 MIST TATTOO GALLERY. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
