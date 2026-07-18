@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mist Tattoo Studio | Arte na Pele</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b0b0b;
+        }
+        .font-display {
+            font-family: 'Cinzel', serif;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0b0b0b; }
+        ::-webkit-scrollbar-thumb { background: #262626; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #d4af37; }
+    </style>
+</head>
+<body class="text-gray-300 antialiased selection:bg-amber-500 selection:text-black">
+
+    <header class="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-neutral-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="font-display text-2xl font-bold tracking-widest text-white flex items-center gap-2">
+                <span class="text-amber-500">MIST</span>TATTOO
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wider uppercase">
+                <a href="#home" class="hover:text-amber-500 transition-colors">Início</a>
+                <a href="#studio" class="hover:text-amber-500 transition-colors">O Estúdio</a>
+                <a href="#artists" class="hover:text-amber-500 transition-colors">Artistas</a>
+                <a href="#contato" class="hover:text-amber-500 transition-colors">Contato</a>
+            </nav>
+
+            <a href="#contato" class="border border-amber-500/50 hover:bg-amber-500 hover:text-black text-amber-500 px-5 py-2 rounded-full text-xs font-semibold tracking-widest uppercase transition-all duration-300">
+                Agendar Horário
+            </a>
+        </div>
+    </header>
+
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden pt-20">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&q=80&w=1920')] bg-cover bg-center transition-transform duration-10000 scale-105"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0b0b0b] via-black/60 to-black/80"></div>
+        </div>
+
+        <div class="relative z-10 text-center max-w-4xl mx-auto px-4 space-y-6">
+            <span class="text-amber-500 font-semibold tracking-widest uppercase text-sm block animate-pulse">Estúdio Premium em São Paulo</span>
+            <h1 class="font-display text-5xl md:text-7xl font-bold text-white tracking-tight leading-none">
+                Arte eterna,<br><span class="text-neutral-400">traços que contam histórias.</span>
+            </h1>
+            <p class="text-gray-400 max-w-xl mx-auto text-base md:text-lg font-light">
+                Reunimos 9 dos melhores artistas do país em um ambiente minimalista, seguro e focado na exclusividade da sua ideia.
+            </p>
+            <div class="pt-4 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#artists" class="bg-amber-500 hover:bg-amber-400 text-black font-semibold tracking-wider uppercase text-xs px-8 py-4 rounded-md transition-all shadow-lg shadow-amber-500/10">
+                    Conhecer os Tautadores
+                </a>
+                <a href="#studio" class="bg-neutral-900/80 hover:bg-neutral-800 text-white border border-neutral-800 font-semibold tracking-wider uppercase text-xs px-8 py-4 rounded-md transition-all">
+                    Tour Pelo Estúdio
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex gap-3">
+            <span class="w-12 h-1 bg-amber-500 rounded-full cursor-pointer"></span>
+            <span class="w-12 h-1 bg-neutral-700 rounded-full cursor-pointer hover:bg-neutral-500 transition-colors"></span>
+            <span class="w-12 h-1 bg-neutral-700 rounded-full cursor-pointer hover:bg-neutral-500 transition-colors"></span>
+        </div>
+    </section>
+
+    <section id="studio" class="py-24 bg-[#0e0e0e] border-y border-neutral-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-amber-500 font-semibold tracking-widest uppercase text-xs">Alto Padrão</span>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold text-white">A experiência Mist Tattoo</h2>
+                    <p class="text-gray-400 leading-relaxed">
+                        Mais do que um estúdio de tatuagem, um espaço de convergência artística. Contamos com biossegurança rigorosa nível hospitalar, materiais premium descartáveis e um atendimento focado no seu conforto do rascunho à cicatrização.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 pt-4">
+                        <div class="border-l-2 border-amber-500 pl-4">
+                            <h4 class="text-white font-semibold">100% Seguro</h4>
+                            <p class="text-xs text-gray-500 mt-1">Materiais homologados e esterilização máxima.</p>
+                        </div>
+                        <div class="border-l-2 border-amber-500 pl-4">
+                            <h4 class="text-white font-semibold">9 Especialistas</h4>
+                            <p class="text-xs text-gray-500 mt-1">Um mestre para cada estilo de tatuagem.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=600" alt="Studio" class="rounded-lg grayscale hover:grayscale-0 transition-all duration-500 object-cover h-64 w-full">
+                    <img src="https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?auto=format&fit=crop&q=80&w=600" alt="Tattoo Machine" class="rounded-lg grayscale hover:grayscale-0 transition-all duration-500 object-cover h-64 w-full mt-8">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="artists" class="py-24 bg-[#0b0b0b]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-amber-500 font-semibold tracking-widest uppercase text-xs">Line-up de Peso</span>
+                <h2 class="font-display text-4xl font-bold text-white">Nossos Residentes</h2>
+                <p class="text-gray-400 text-sm">Cada artista possui identidade única e domínio completo de suas vertentes. Escolha o traço que dá vida à sua ideia.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="group relative bg-[#121212] border border-neutral-900 rounded-lg overflow-hidden hover:border-amber-500/30 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden aspect-[4/5]">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600" alt="Mariana Silva" class="object-cover w-full h-full grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500">
+                            <span class="absolute bottom-4 left-4 bg-black/80 backdrop-blur-sm border border-neutral-800 text-amber-500 px-3 py-1 rounded text-xs font-semibold tracking-wider uppercase">Blackwork & Fine Line</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-xl font-bold text-white group-hover:text-amber-500 transition-colors">Mariana Silva</h3>
+                            <p class="text-xs text-gray-500 mt-1">Especialista em traços finos e botânica geométrica com mais de 7 anos de estrada.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 flex gap-2">
+                        <a href="https://instagram.com" target="_blank" class="w-10 h-10 bg-neutral-900 hover:bg-amber-500 hover:text-black flex items-center justify-center rounded transition-colors text-sm"><i class="fab fa-instagram"></i></a>
+                        <a href="#contato" class="flex-1 bg-neutral-900 group-hover:bg-amber-500/10 group-hover:text-amber-500 group-hover:border-amber-500/20 border border-neutral-800 text-center py-2.5 rounded text-xs font-semibold uppercase tracking-wider transition-all flex items-center justify-center gap-2">Ver Portfólio & Agendar</a>
+                    </div>
+                </div>
+
+                <div class="group relative bg-[#121212] border border-neutral-900 rounded-lg overflow-hidden hover:border-amber-500/30 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden aspect-[4/5]">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600" alt="Lucas Becker" class="object-cover w-full h-full grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500">
+                            <span class="absolute bottom-4 left-4 bg-black/80 backdrop-blur-sm border border-neutral-800 text-amber-500 px-3 py-1 rounded text-xs font-semibold tracking-wider uppercase">Realismo Dark</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-xl font-bold text-white group-hover:text-amber-500 transition-colors">Lucas Becker</h3>
+                            <p class="text-xs text-gray-500 mt-1">Sombras densas e retratos ultrarrealistas inspirados no horror clássico e surrealismo.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 flex gap-2">
+                        <a href="https://instagram.com" target="_blank" class="w-10 h-10 bg-neutral-900 hover:bg-amber-500 hover:text-black flex items-center justify-center rounded transition-colors text-sm"><i class="fab fa-instagram"></i></a>
+                        <a href="#contato" class="flex-1 bg-neutral-900 group-hover:bg-amber-500/10 group-hover:text-amber-500 group-hover:border-amber-500/20 border border-neutral-800 text-center py-2.5 rounded text-xs font-semibold uppercase tracking-wider transition-all flex items-center justify-center gap-2">Ver Portfólio & Agendar</a>
+                    </div>
+                </div>
+
+                <div class="group relative bg-[#121212] border border-neutral-900 rounded-lg overflow-hidden hover:border-amber-500/30 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden aspect-[4/5]">
+                            <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&q=80&w=600" alt="Gabi Ortiz" class="object-cover w-full h-full grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500">
+                            <span class="absolute bottom-4 left-4 bg-black/80 backdrop-blur-sm border border-neutral-800 text-amber-500 px-3 py-1 rounded text-xs font-semibold tracking-wider uppercase">Traditional Old School</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-xl font-bold text-white group-hover:text-amber-500 transition-colors">Gabi Ortiz</h3>
+                            <p class="text-xs text-gray-500 mt-1">Cores sólidas, traços bold e o tradicionalismo americano raiz reformulado com força máxima.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 flex gap-2">
+                        <a href="https://instagram.com" target="_blank" class="w-10 h-10 bg-neutral-900 hover:bg-amber-500 hover:text-black flex items-center justify-center rounded transition-colors text-sm"><i class="fab fa-instagram"></i></a>
+                        <a href="#contato" class="flex-1 bg-neutral-900 group-hover:bg-amber-500/10 group-hover:text-amber-500 group-hover:border-amber-500/20 border border-neutral-800 text-center py-2.5 rounded text-xs font-semibold uppercase tracking-wider transition-all flex items-center justify-center gap-2">Ver Portfólio & Agendar</a>
+                    </div>
+                </div>
+
+                <div class="group relative bg-[#121212] border border-neutral-900 rounded-lg overflow-hidden hover:border-amber-500/30 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden aspect-[4/5]">
+                            <img src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?auto=format&fit=crop&q=80&w=600" alt="Daniel Wu" class="object-cover w-full h-full grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500">
+                            <span class="absolute bottom-4 left-4 bg-black/80 backdrop-blur-sm border border-neutral-800 text-amber-500 px-3 py-1 rounded text-xs font-semibold tracking-wider uppercase">Oriental / Irezumi</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-xl font-bold text-white group-hover:text-amber-500 transition-colors">Daniel Wu</h3>
+                            <p class="text-xs text-gray-500 mt-1">Fechamentos e artes de grande escala respeitando a história clássica da tatuagem japonesa.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 flex gap-2">
+                        <a href="#" class="w-10 h-10 bg-neutral-900 hover:bg-amber-500 hover:text-black flex items-center justify-center rounded transition-colors text-sm"><i class="fab fa-instagram"></i></a>
+                        <a href="#contato" class="flex-1 bg-neutral-900 group-hover:bg-amber-500/10 group-hover:text-amber-500 border border-neutral-800 text-center py-2.5 rounded text-xs font-semibold uppercase tracking-wider transition-all flex items-center justify-center gap-2">Ver Portfólio & Agendar</a>
+                    </div>
+                </div>
+
+                <div class="group relative bg-[#121212] border border-neutral-900 rounded-lg overflow-hidden hover:border-amber-500/30 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden aspect-[4/5]">
+                            <img src="https://images.unsplash.com/photo-1614283233556-f35b0c801ef1?auto=format&fit=crop&q=80&w=600" alt="Carla Diaz" class="object-cover w-full h-full grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500">
+                            <span class="absolute bottom-4 left-4 bg-black/80 backdrop-blur-sm border border-neutral-800 text-amber-500 px-3 py-1 rounded text-xs font-semibold tracking-wider uppercase">Aquarela & Colorido</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-xl font-bold text-white group-hover:text-amber-500 transition-colors">Carla Diaz</h3>
+                            <p class="text-xs text-gray-500 mt-1">Explosão de cores fluídas e transições suaves que se adaptam perfeitamente à anatomia.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 flex gap-2">
+                        <a href="#" class="w-10 h-10 bg-neutral-900 hover:bg-amber-500 hover:text-black flex items-center justify-center rounded transition-colors text-sm"><i class="fab fa-instagram"></i></a>
+                        <a href="#contato" class="flex-1 bg-neutral-900 group-hover:bg-amber-500/10 group-hover:text-amber-500 border border-neutral-800 text-center py-2.5 rounded text-xs font-semibold uppercase tracking-wider transition-all flex items-center justify-center gap-2">Ver Portfólio & Agendar</a>
+                    </div>
+                </div>
+
+                <div class="group relative bg-[#121212] border border-neutral-900 rounded-lg overflow-hidden hover:border-amber-500/30 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden aspect-[4/5]">
+                            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=600" alt="Renata Fontes" class="object-cover w-full h-full grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500">
+                            <span class="absolute bottom-4 left-4 bg-black/80 backdrop-blur-sm border border-neutral-800 text-amber-500 px-3 py-1 rounded text-xs font-semibold tracking-wider uppercase">Pontilhismo / Sacred Geometry</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-xl font-bold text-white group-hover:text-amber-500 transition-colors">Renata Fontes</h3>
+                            <p class="text-xs text-gray-500 mt-1">Geometria sagrada impecável construída ponto a ponto com precisão matemática.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 flex gap-2">
+                        <a href="#" class="w-10 h-10 bg-neutral-900 hover:bg-amber-500 hover:text-black flex items-center justify-center rounded transition-colors text-sm"><i class="fab fa-instagram"></i></a>
+                        <a href="#contato" class="flex-1 bg-neutral-900 group-hover:bg-amber-500/10 group-hover:text-amber-500 border border-neutral-800 text-center py-2.5 rounded text-xs font-semibold uppercase tracking-wider transition-all flex items-center justify-center gap-2">Ver Portfólio & Agendar</a>
+                    </div>
+                </div>
+
+                <div class="group relative bg-[#121212] border border-neutral-900 rounded-lg overflow-hidden hover:border-amber-500/30 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden aspect-[4/5]">
+                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=600" alt="Henrique Costa" class="object-cover w-full h-full grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500">
+                            <span class="absolute bottom-4 left-4 bg-black/80 backdrop-blur-sm border border-neutral-800 text-amber-500 px-3 py-1 rounded text-xs font-semibold tracking-wider uppercase">Tribal & Polinésio</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-xl font-bold text-white group-hover:text-amber-500 transition-colors">Henrique Costa</h3>
+                            <p class="text-xs text-gray-500 mt-1">Arte ancestral focada no fluxo muscular, trazendo poder e encaixes anatômicos impecáveis.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 flex gap-2">
+                        <a href="#" class="w-10 h-10 bg-neutral-900 hover:bg-amber-500 hover:text-black flex items-center justify-center rounded transition-colors text-sm"><i class="fab fa-instagram"></i></a>
+                        <a href="#contato" class="flex-1 bg-neutral-900 group-hover:bg-amber-500/10 group-hover:text-amber-500 border border-neutral-800 text-center py-2.5 rounded text-xs font-semibold uppercase tracking-wider transition-all flex items-center justify-center gap-2">Ver Portfólio & Agendar</a>
+                    </div>
+                </div>
+
+                <div class="group relative bg-[#121212] border border-neutral-900 rounded-lg overflow-hidden hover:border-amber-500/30 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden aspect-[4/5]">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=600" alt="Aline Weber" class="object-cover w-full h-full grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500">
+                            <span class="absolute bottom-4 left-4 bg-black/80 backdrop-blur-sm border border-neutral-800 text-amber-500 px-3 py-1 rounded text-xs font-semibold tracking-wider uppercase">Sketch / Custom Trash</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-xl font-bold text-white group-hover:text-amber-500 transition-colors">Aline Weber</h3>
+                            <p class="text-xs text-gray-500 mt-1">Estilo expressivo com linhas de rascunho intencionais e misturas abstratas de tinta.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 flex gap-2">
+                        <a href="#" class="w-10 h-10 bg-neutral-900 hover:bg-amber-500 hover:text-black flex items-center justify-center rounded transition-colors text-sm"><i class="fab fa-instagram"></i></a>
+                        <a href="#contato" class="flex-1 bg-neutral-900 group-hover:bg-amber-500/10 group-hover:text-amber-500 border border-neutral-800 text-center py-2.5 rounded text-xs font-semibold uppercase tracking-wider transition-all flex items-center justify-center gap-2">Ver Portfólio & Agendar</a>
+                    </div>
+                </div>
+
+                <div class="group relative bg-[#121212] border border-neutral-900 rounded-lg overflow-hidden hover:border-amber-500/30 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden aspect-[4/5]">
+                            <img src="https://images.unsplash.com/photo-1504257404792-7a552253755f?auto=format&fit=crop&q=80&w=600" alt="Bruno Reis" class="object-cover w-full h-full grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500">
+                            <span class="absolute bottom-4 left-4 bg-black/80 backdrop-blur-sm border border-neutral-800 text-amber-500 px-3 py-1 rounded text-xs font-semibold tracking-wider uppercase">Lettering custom</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-xl font-bold text-white group-hover:text-amber-500 transition-colors">Bruno Reis</h3>
+                            <p class="text-xs text-gray-500 mt-1">Caligrafias autorais e exclusivas. Do Chicano clássico ao gótico agressivo sob medida.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 flex gap-2">
+                        <a href="#" class="w-10 h-10 bg-neutral-900 hover:bg-amber-500 hover:text-black flex items-center justify-center rounded transition-colors text-sm"><i class="fab fa-instagram"></i></a>
+                        <a href="#contato" class="flex-1 bg-neutral-900 group-hover:bg-amber-500/10 group-hover:text-amber-500 border border-neutral-800 text-center py-2.5 rounded text-xs font-semibold uppercase tracking-wider transition-all flex items-center justify-center gap-2">Ver Portfólio & Agendar</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-24 bg-[#0e0e0e] border-t border-neutral-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <span class="text-amber-500 font-semibold tracking-widest uppercase text-xs">Dê o primeiro passo</span>
+                        <h2 class="font-display text-4xl font-bold text-white">Agende sua Sessão</h2>
+                        <p class="text-gray-400">Preencha os campos ao lado indicando sua ideia ou escolhendo diretamente o artista que você mais curtiu. Retornamos com o orçamento em até 24h.</p>
+                    </div>
+
+                    <div class="space-y-4 text-sm">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-neutral-900 flex items-center justify-center text-amber-500 rounded"><i class="fas fa-map-marker-alt"></i></div>
+                            <p class="text-gray-400">Av. Paulista, 1000 - Jardins, São Paulo - SP</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-neutral-900 flex items-center justify-center text-amber-500 rounded"><i class="fas fa-clock"></i></div>
+                            <p class="text-gray-400">Terça a Sábado: 10h às 21h | Domingo: 12h às 18h</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-neutral-900 flex items-center justify-center text-amber-500 rounded"><i class="fab fa-whatsapp"></i></div>
+                            <p class="text-gray-400">+55 (11) 99999-8888</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#121212] p-8 rounded-xl border border-neutral-900">
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Seu Nome</label>
+                            <input type="text" placeholder="Ex: Gabriel Souza" class="w-full bg-[#0b0b0b] border border-neutral-800 focus:border-amber-500 rounded p-3 text-white text-sm outline-none transition-colors">
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">WhatsApp</label>
+                                <input type="tel" placeholder="(11) 99999-9999" class="w-full bg-[#0b0b0b] border border-neutral-800 focus:border-amber-500 rounded p-3 text-white text-sm outline-none transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Escolha o Artista</label>
+                                <select class="w-full bg-[#0b0b0b] border border-neutral-800 focus:border-amber-500 rounded p-3 text-white text-sm outline-none transition-colors">
+                                    <option value="none">Ainda não decidi (Me ajude!)</option>
+                                    <option value="mariana">Mariana Silva (Blackwork)</option>
+                                    <option value="lucas">Lucas Becker (Realismo)</option>
+                                    <option value="gabi">Gabi Ortiz (Old School)</option>
+                                    <option value="daniel">Daniel Wu (Oriental)</option>
+                                    <option value="carla">Carla Diaz (Aquarela)</option>
+                                    <option value="renata">Renata Fontes (Pontilhismo)</option>
+                                    <option value="henrique">Henrique Costa (Tribal)</option>
+                                    <option value="aline">Aline Weber (Sketch)</option>
+                                    <option value="bruno">Bruno Reis (Lettering)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Descrição da Ideia</label>
+                            <textarea rows="4" placeholder="Conte o local do corpo, tamanho estimado em cm e referências da sua ideia..." class="w-full bg-[#0b0b0b] border border-neutral-800 focus:border-amber-500 rounded p-3 text-white text-sm outline-none transition-colors"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-black font-semibold text-xs tracking-widest uppercase py-4 rounded transition-all">
+                            Enviar Solicitação de Orçamento
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-8 border-t border-neutral-900 text-center text-xs text-neutral-600">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 Mist Tattoo Studio. Todos os direitos reservados.</p>
+            <div class="flex gap-4 text-base">
+                <a href="#" class="hover:text-amber-500 transition-colors"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-amber-500 transition-colors"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-amber-500 transition-colors"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
