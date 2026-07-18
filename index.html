@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MYST TATTOOS | Studio</title>
+    <title>MIST TATTOOS | Studio</title>
     <meta name="description" content="Estúdio de tatuagem de alto padrão. Arte, exclusividade e precisão.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,7 @@
 
     <div class="preloader">
         <div class="preloader-content">
-            <span class="preloader-text">MYST TATTOO</span>
+            <span class="preloader-text">MIST TATTOO</span>
             <div class="preloader-line"></div>
         </div>
     </div>
@@ -28,7 +28,7 @@
     <div class="progress-bar"></div>
 
     <header class="header">
-        <div class="logo">MYST TATTOO</div>
+        <div class="logo">MIST TATTOO</div>
         
         <button class="mobile-menu-btn" aria-label="Menu">
             <span class="line"></span>
@@ -66,8 +66,8 @@
         <div class="container about-grid">
             <div class="about-text">
                 <h2 class="section-title reveal-up">O Studio</h2>
-                <p class="reveal-up">Mais do que um estúdio de tatuagem, um santuário para a expressão pessoal. Na Myst Tattoo, combinamos técnicas milenares com design contemporâneo em um ambiente onde cada detalhe foi pensado para inspirar.</p>
-                <p class="reveal-up">Trabalhamos apenas com agendamentos exclusivos para garantir que a sua visão receba a dedicação e o foco que merece.</p>
+                    <p class="reveal-up">Mais do que um estúdio de tatuagem, somos um espaço plural dedicado à sua autoexpressão. Na MIST Tattoo, reunimos uma equipe de artistas especialistas nos mais diversos estilos — do realismo ao oriental e neotradicional — em um ambiente pensado para inspirar.</p>
+                    <p class="reveal-up">Nosso objetivo é conectar a sua ideia ao tatuador ideal para o seu projeto, trabalhando com agendamentos exclusivos para garantir a excelência e a dedicação que a sua arte merece.</p>   
             </div>
             <div class="about-image img-reveal">
                 <img src="https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?q=80&w=1000&auto=format&fit=crop" alt="Interior do Studio" loading="lazy">
@@ -110,57 +110,160 @@
         </div>
     </section>
 
-    <section id="tatuadores" class="section artists">
-        <div class="container">
-            <h2 class="section-title reveal-up">Nossos Artistas</h2>
-            <div class="artists-list">
-                <div class="artist-row">
-                    <div class="artist-row-img img-reveal-artist">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop" alt="Elena Rostova" loading="lazy" class="parallax-img">
-                    </div>
-                    <div class="artist-row-info">
-                        <span class="specialty fade-up-artist">Blackwork & Oriental</span>
-                        <h3 class="fade-up-artist">Elena Rostova</h3>
-                        <p class="exp fade-up-artist"><strong>Tempo de Agulha:</strong> 8 Anos</p>
-                        <p class="bio fade-up-artist">Especialista em criar grandes composições com alto contraste. Seu trabalho é focado em fluidez anatômica, onde a tinta preta ganha vida em formas sombrias.</p>
-                        <div class="artist-tags fade-up-artist">
-                            <span>Alto Contraste</span><span>Sombreado</span><span>Fechamentos</span>
-                        </div>
-                        <div class="fade-up-artist">
-                            <button class="btn-primary open-artist-modal" 
-                                data-name="Elena Rostova" data-spec="Blackwork & Oriental" data-exp="8 Anos" 
-                                data-bio="Especialista em criar grandes composições com alto contraste. Seu trabalho é focado em fluidez anatômica."
-                                data-img="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop">
-                                Ver Portfólio
-                            </button>
-                        </div>
-                    </div>
+<section id="tatuadores" class="section artists">
+    <div class="container">
+        <h2 class="section-title reveal-up">Nossos Artistas</h2>
+        <div class="artists-list">
+
+            <!-- 1. Eduardo -->
+            <div class="artist-row">
+                <div class="artist-row-img img-reveal-artist">
+                    <img src="img/Eduardo/profile.jpeg" alt="Eduardo" loading="lazy" class="parallax-img">
                 </div>
-                <div class="artist-row">
-                    <div class="artist-row-img img-reveal-artist">
-                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1000&auto=format&fit=crop" alt="Arthur Pendragon" loading="lazy" class="parallax-img">
+                <div class="artist-row-info">
+                    <span class="specialty fade-up-artist">Realismo & Preto e Cinza</span>
+                    <h3 class="fade-up-artist">Eduardo</h3>
+                    <p class="bio fade-up-artist">Especialista em realismo fotográfico e texturas complexas, transformando ideias em obras de arte na pele com alto nível de detalhe.</p>
+                    <div class="artist-tags fade-up-artist">
+                        <span>Realismo</span><span>Sombras</span><span>Texturas</span>
                     </div>
-                    <div class="artist-row-info">
-                        <span class="specialty fade-up-artist">Fine Line & Minimalista</span>
-                        <h3 class="fade-up-artist">Arthur Pendragon</h3>
-                        <p class="exp fade-up-artist"><strong>Tempo de Agulha:</strong> 5 Anos</p>
-                        <p class="bio fade-up-artist">Seu trabalho busca a delicadeza e a precisão absoluta através de agulhas únicas. Inspirado pela arte renascentista e botânica.</p>
-                        <div class="artist-tags fade-up-artist">
-                            <span>Micro-realismo</span><span>Traço Fino</span><span>Botânica</span>
+                    
+                    <!-- Carrossel de Portfólio (UX Nativo) -->
+                    <div class="artist-portfolio-carousel fade-up-artist">
+                        <h4 class="carousel-title">Trabalhos Recentes</h4>
+                        <div class="carousel-track custom-cursor-interactive">
+                            <img src="img/Eduardo/tatto (1).jpeg" alt="Tattoo Eduardo 1" loading="lazy" class="carousel-img">
+                            <img src="img/Eduardo/tatto (2).jpeg" alt="Tattoo Eduardo 2" loading="lazy" class="carousel-img">
+                            <img src="img/Eduardo/tatto (3).jpeg" alt="Tattoo Eduardo 3" loading="lazy" class="carousel-img">
+                            <img src="img/Eduardo/tatto (4).jpeg" alt="Tattoo Eduardo 4" loading="lazy" class="carousel-img">
                         </div>
-                        <div class="fade-up-artist">
-                            <button class="btn-primary open-artist-modal"
-                                data-name="Arthur Pendragon" data-spec="Fine Line & Minimalista" data-exp="5 Anos" 
-                                data-bio="Seu trabalho busca a delicadeza e a precisão absoluta. Inspirado pela arte renascentista."
-                                data-img="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1000&auto=format&fit=crop">
-                                Ver Portfólio
-                            </button>
-                        </div>
+                    </div>
+
+                    <div class="fade-up-artist">
+                        <a href="#contato" class="btn-primary mt-2">Agendar com Eduardo</a>
                     </div>
                 </div>
             </div>
+
+            <!-- 2. Isabela -->
+            <div class="artist-row">
+                <div class="artist-row-img img-reveal-artist">
+                    <img src="img/Isabela/profile.jpeg" alt="Isabela" loading="lazy" class="parallax-img">
+                </div>
+                <div class="artist-row-info">
+                    <span class="specialty fade-up-artist">Fine Line & Minimalista</span>
+                    <h3 class="fade-up-artist">Isabela</h3>
+                    <p class="bio fade-up-artist">Traços finos e precisos. Especialista em florais, micro-realismo e designs delicados que acompanham a fluidez do corpo.</p>
+                    <div class="artist-tags fade-up-artist">
+                        <span>Fine Line</span><span>Botânica</span><span>Delicadeza</span>
+                    </div>
+                    
+                    <div class="artist-portfolio-carousel fade-up-artist">
+                        <h4 class="carousel-title">Trabalhos Recentes</h4>
+                        <div class="carousel-track custom-cursor-interactive">
+                            <img src="img/Isabela/tatto (1).jpeg" alt="Tattoo Isabela 1" loading="lazy" class="carousel-img">
+                            <img src="img/Isabela/tatto (2).jpeg" alt="Tattoo Isabela 2" loading="lazy" class="carousel-img">
+                            <img src="img/Isabela/tatto (3).jpeg" alt="Tattoo Isabela 3" loading="lazy" class="carousel-img">
+                            <img src="img/Isabela/tatto (4).jpeg" alt="Tattoo Isabela 4" loading="lazy" class="carousel-img">
+                        </div>
+                    </div>
+
+                    <div class="fade-up-artist">
+                        <a href="#contato" class="btn-primary mt-2">Agendar com Isabela</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Lina -->
+            <div class="artist-row">
+                <div class="artist-row-img img-reveal-artist">
+                    <img src="img/Lina/profile.jpeg" alt="Lina" loading="lazy" class="parallax-img">
+                </div>
+                <div class="artist-row-info">
+                    <span class="specialty fade-up-artist">Oriental & Neotradicional</span>
+                    <h3 class="fade-up-artist">Lina</h3>
+                    <p class="bio fade-up-artist">Cores sólidas e linhas marcantes. Combina a forte tradição da tatuagem oriental com uma visão moderna e neotradicional.</p>
+                    <div class="artist-tags fade-up-artist">
+                        <span>Irezumi</span><span>Cores Sólidas</span><span>Neotrad</span>
+                    </div>
+                    
+                    <div class="artist-portfolio-carousel fade-up-artist">
+                        <h4 class="carousel-title">Trabalhos Recentes</h4>
+                        <div class="carousel-track custom-cursor-interactive">
+                            <img src="img/Lina/tatto (1).jpeg" alt="Tattoo Lina 1" loading="lazy" class="carousel-img">
+                            <img src="img/Lina/tatto (2).jpeg" alt="Tattoo Lina 2" loading="lazy" class="carousel-img">
+                            <img src="img/Lina/tatto (3).jpeg" alt="Tattoo Lina 3" loading="lazy" class="carousel-img">
+                            <img src="img/Lina/tatto (4).jpeg" alt="Tattoo Lina 4" loading="lazy" class="carousel-img">
+                        </div>
+                    </div>
+
+                    <div class="fade-up-artist">
+                        <a href="#contato" class="btn-primary mt-2">Agendar com Lina</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Guilherme -->
+            <div class="artist-row">
+                <div class="artist-row-img img-reveal-artist">
+                    <img src="img/Guilherme/profile.jpeg" alt="Guilherme" loading="lazy" class="parallax-img">
+                </div>
+                <div class="artist-row-info">
+                    <span class="specialty fade-up-artist">Blackwork & Dark Art</span>
+                    <h3 class="fade-up-artist">Guilherme</h3>
+                    <p class="bio fade-up-artist">Mestre em sombras, contrastes extremos e fechamentos de corpo. Sua arte explora o lado mais sombrio e texturizado do Blackwork.</p>
+                    <div class="artist-tags fade-up-artist">
+                        <span>Blackwork</span><span>Dark Art</span><span>Alto Contraste</span>
+                    </div>
+                    
+                    <div class="artist-portfolio-carousel fade-up-artist">
+                        <h4 class="carousel-title">Trabalhos Recentes</h4>
+                        <div class="carousel-track custom-cursor-interactive">
+                            <img src="img/Guilherme/tatto (1).jpeg" alt="Tattoo Guilherme 1" loading="lazy" class="carousel-img">
+                            <img src="img/Guilherme/tatto (2).jpeg" alt="Tattoo Guilherme 2" loading="lazy" class="carousel-img">
+                            <img src="img/Guilherme/tatto (3).jpeg" alt="Tattoo Guilherme 3" loading="lazy" class="carousel-img">
+                            <img src="img/Guilherme/tatto (4).jpeg" alt="Tattoo Guilherme 4" loading="lazy" class="carousel-img">
+                        </div>
+                    </div>
+
+                    <div class="fade-up-artist">
+                        <a href="#contato" class="btn-primary mt-2">Agendar com Guilherme</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Tatuador Extra (Adicionei o Marcos para fechar os 5 solicitados) -->
+            <div class="artist-row">
+                <div class="artist-row-img img-reveal-artist">
+                    <img src="img/Marcos/profile.jpeg" alt="Marcos" loading="lazy" class="parallax-img">
+                </div>
+                <div class="artist-row-info">
+                    <span class="specialty fade-up-artist">Geométrico & Pontilhismo</span>
+                    <h3 class="fade-up-artist">Marcos</h3>
+                    <p class="bio fade-up-artist">Simetria e precisão matemática. Cria padrões geométricos hipnotizantes utilizando técnicas avançadas de pontilhismo.</p>
+                    <div class="artist-tags fade-up-artist">
+                        <span>Geometria</span><span>Pontilhismo</span><span>Mandala</span>
+                    </div>
+                    
+                    <div class="artist-portfolio-carousel fade-up-artist">
+                        <h4 class="carousel-title">Trabalhos Recentes</h4>
+                        <div class="carousel-track custom-cursor-interactive">
+                            <img src="img/Marcos/tatto (1).jpeg" alt="Tattoo Marcos 1" loading="lazy" class="carousel-img">
+                            <img src="img/Marcos/tatto (2).jpeg" alt="Tattoo Marcos 2" loading="lazy" class="carousel-img">
+                            <img src="img/Marcos/tatto (3).jpeg" alt="Tattoo Marcos 3" loading="lazy" class="carousel-img">
+                            <img src="img/Marcos/tatto (4).jpeg" alt="Tattoo Marcos 4" loading="lazy" class="carousel-img">
+                        </div>
+                    </div>
+
+                    <div class="fade-up-artist">
+                        <a href="#contato" class="btn-primary mt-2">Agendar com Marcos</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <section id="eventos" class="section events">
         <div class="container">
@@ -189,22 +292,18 @@
                 <p>Nossa equipe está pronta para transformar sua ideia em realidade. Entre em contato para consultas e orçamentos.</p>
                 <ul class="contact-list">
                     <li><strong>WhatsApp:</strong> +55 14 99999-9999</li>
-                    <li><strong>Instagram:</strong> @myst.tattoo</li>
-                    <li><strong>Horário:</strong> Ter - Sáb, 11h às 20h</li>
+                    <li><strong>Instagram:</strong> @mist.tattoos</li>
                 </ul>
                 <a href="#" class="btn-primary mt-2">Iniciar Atendimento</a>
             </div>
-            <div class="contact-map reveal-up delay-1">
-                <div class="map-placeholder">
-                    <span>Mapa Interativo</span>
-                    <p>Endereço</p>
-                </div>
-            </div>
-        </div>
+
+<div class="contact-map reveal-up delay-1">
+    <iframe src="https://maps.google.com/maps?q=MIST+TATTOO,+Mar%C3%ADlia&hl=pt-BR&z=17&output=embed" width="100%" height="100%" style="border:0; min-height: 350px; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+</div>
     </section>
 
     <footer class="footer">
-        <p>&copy; 2026 MYST Tattoos. Todos os direitos reservados.</p>
+        <p>&copy; 2026 MIST Tattoos. Todos os direitos reservados.</p>
     </footer>
 
     <div id="modal-work" class="modal">

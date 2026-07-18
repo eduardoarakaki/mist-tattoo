@@ -334,3 +334,69 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 500; }
     .modal-grid img { max-height: 30vh; }
 }
 
+
+/* ==========================================================================
+   CARROSSEL NATIVO DE PORTFÓLIO (UX)
+   ========================================================================== */
+.artist-portfolio-carousel {
+    margin: 1.5rem 0;
+    width: 100%;
+}
+
+.carousel-title {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #a0a0a0;
+    margin-bottom: 0.8rem;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 0.8rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 0.8rem;
+    /* Estilização nativa suave para a barra de rolagem */
+    scrollbar-width: thin;
+    scrollbar-color: #d4af37 rgba(255, 255, 255, 0.05);
+}
+
+.carousel-track::-webkit-scrollbar {
+    height: 4px;
+}
+
+.carousel-track::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+}
+
+.carousel-track::-webkit-scrollbar-thumb {
+    background: #d4af37; /* Cor base dourada do seu layout */
+    border-radius: 4px;
+}
+
+.carousel-img {
+    flex: 0 0 130px; /* Largura fixa para manter o design consistente */
+    height: 130px;
+    object-fit: cover;
+    border-radius: 6px;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease, border 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.05);
+    cursor: grab;
+}
+
+.carousel-img:active {
+    cursor: grabbing;
+}
+
+.carousel-img:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255,255,255,0.2);
+}
+
+.mt-2 {
+    margin-top: 1rem;
+    display: inline-block;
+}
