@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIST TATTOOS | Studio</title>
+    <title>MIST TATTOO | Studio</title>
     <meta name="description" content="Estúdio de tatuagem de alto padrão. Arte, exclusividade e precisão.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,39 +78,46 @@
     <section id="trabalhos" class="section works">
         <div class="container">
             <div class="section-header reveal-up">
-                <h2 class="section-title">Portfólio</h2>
-                <div class="filters">
+                <h2 class="section-title">Local</h2>
+                <!-- <div class="filters">
                     <button class="filter-btn active" data-filter="all">Todos</button>
                     <button class="filter-btn" data-filter="fine-line">Fine Line</button>
                     <button class="filter-btn" data-filter="blackwork">Blackwork</button>
                     <button class="filter-btn" data-filter="realismo">Realismo</button>
-                </div>
+                </div> -->
             </div>
 
             <div class="gallery-grid">
                 <div class="gallery-item reveal-up blackwork" 
-                     data-img="https://images.unsplash.com/photo-1562962230-16e4623d36e6?q=80&w=800&auto=format&fit=crop" 
+                     data-img="img/studio/studio (1).jpeg" 
                      data-title="Sombras Noturnas" data-style="Blackwork" data-artist="Elena Rostova" data-desc="Composição fechada em braço utilizando alto contraste e preenchimento sólido.">
-                    <img src="https://images.unsplash.com/photo-1562962230-16e4623d36e6?q=80&w=800&auto=format&fit=crop" alt="Tattoo Blackwork" loading="lazy">
+                    <img src="img/studio/studio (2).jpeg" alt="Tattoo Blackwork" loading="lazy">
                     <div class="item-overlay"><span>Ver Detalhes</span></div>
                 </div>
                 <div class="gallery-item reveal-up fine-line"
-                     data-img="https://images.unsplash.com/photo-1621252178222-38600d86a678?q=80&w=800&auto=format&fit=crop" 
+                     data-img="img/studio/studio (3).jpeg" 
                      data-title="Geometria Sagrada" data-style="Fine Line" data-artist="Arthur Pendragon" data-desc="Linhas finas e precisas construindo um design etéreo e minimalista.">
-                    <img src="https://images.unsplash.com/photo-1621252178222-38600d86a678?q=80&w=800&auto=format&fit=crop" alt="Tattoo Fine Line" loading="lazy">
+                    <img src="img/studio/studio (4).jpeg" alt="Tattoo Fine Line" loading="lazy">
                     <div class="item-overlay"><span>Ver Detalhes</span></div>
                 </div>
                 <div class="gallery-item reveal-up realismo"
-                     data-img="https://images.unsplash.com/photo-1590246814883-578ae1047fa0?q=80&w=800&auto=format&fit=crop" 
+                     data-img="img/studio/studio (5).jpeg" 
                      data-title="Olhar Felino" data-style="Realismo" data-artist="Marcos Silva" data-desc="Trabalho de realismo em preto e cinza com foco em texturas de pelo e brilho nos olhos.">
-                    <img src="https://images.unsplash.com/photo-1590246814883-578ae1047fa0?q=80&w=800&auto=format&fit=crop" alt="Tattoo Realismo" loading="lazy">
+                    <img src="img/studio/studio (6).jpeg" alt="Tattoo Realismo" loading="lazy">
                     <div class="item-overlay"><span>Ver Detalhes</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-<section id="tatuadores" class="section artists">
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close">&times;</button>
+            <img class="lightbox-img" alt="Tatuagem ampliada">
+        </div>
+    </div>
+
     <div class="container">
         <h2 class="section-title reveal-up">Nossos Artistas</h2>
         <div class="artists-list">
@@ -135,7 +142,7 @@
                             <img src="img/Eduardo/tatto (1).jpeg" alt="Tattoo Eduardo 1" loading="lazy" class="carousel-img">
                             <img src="img/Eduardo/tatto (2).jpeg" alt="Tattoo Eduardo 2" loading="lazy" class="carousel-img">
                             <img src="img/Eduardo/tatto (3).jpeg" alt="Tattoo Eduardo 3" loading="lazy" class="carousel-img">
-                            <img src="img/Eduardo/tatto (4).jpeg" alt="Tattoo Eduardo 4" loading="lazy" class="carousel-img">
+                            <img src="img/Eduardo/tatto (2).jpg" alt="Tattoo Eduardo 4" loading="lazy" class="carousel-img">
                         </div>
                     </div>
 
@@ -148,7 +155,7 @@
             <!-- 2. Isabela -->
             <div class="artist-row">
                 <div class="artist-row-img img-reveal-artist">
-                    <img src="img/Isabela/profile.jpeg" alt="Isabela" loading="lazy" class="parallax-img">
+                    <img src="img/Isabela/profile.PNG" alt="Isabela" loading="lazy" class="parallax-img">
                 </div>
                 <div class="artist-row-info">
                     <span class="specialty fade-up-artist">Fine Line & Minimalista</span>
@@ -206,7 +213,7 @@
             <!-- 4. Guilherme -->
             <div class="artist-row">
                 <div class="artist-row-img img-reveal-artist">
-                    <img src="img/Guilherme/profile.jpeg" alt="Guilherme" loading="lazy" class="parallax-img">
+                    <img src="img/Guilherme/profile.PNG" alt="Guilherme" loading="lazy" class="parallax-img">
                 </div>
                 <div class="artist-row-info">
                     <span class="specialty fade-up-artist">Blackwork & Dark Art</span>
@@ -232,14 +239,14 @@
                 </div>
             </div>
 
-            <!-- 5. Tatuador Extra (Adicionei o Marcos para fechar os 5 solicitados) -->
+            <!-- 5. Victoria) -->
             <div class="artist-row">
                 <div class="artist-row-img img-reveal-artist">
-                    <img src="img/Marcos/profile.jpeg" alt="Marcos" loading="lazy" class="parallax-img">
+                    <img src="img/Victoria/profile.PNG" alt="Victoria" loading="lazy" class="parallax-img">
                 </div>
                 <div class="artist-row-info">
                     <span class="specialty fade-up-artist">Geométrico & Pontilhismo</span>
-                    <h3 class="fade-up-artist">Marcos</h3>
+                    <h3 class="fade-up-artist">Victoria</h3>
                     <p class="bio fade-up-artist">Simetria e precisão matemática. Cria padrões geométricos hipnotizantes utilizando técnicas avançadas de pontilhismo.</p>
                     <div class="artist-tags fade-up-artist">
                         <span>Geometria</span><span>Pontilhismo</span><span>Mandala</span>
@@ -248,15 +255,131 @@
                     <div class="artist-portfolio-carousel fade-up-artist">
                         <h4 class="carousel-title">Trabalhos Recentes</h4>
                         <div class="carousel-track custom-cursor-interactive">
-                            <img src="img/Marcos/tatto (1).jpeg" alt="Tattoo Marcos 1" loading="lazy" class="carousel-img">
-                            <img src="img/Marcos/tatto (2).jpeg" alt="Tattoo Marcos 2" loading="lazy" class="carousel-img">
-                            <img src="img/Marcos/tatto (3).jpeg" alt="Tattoo Marcos 3" loading="lazy" class="carousel-img">
-                            <img src="img/Marcos/tatto (4).jpeg" alt="Tattoo Marcos 4" loading="lazy" class="carousel-img">
+                            <img src="img/Victoria/tatto (1).jpeg" alt="Tattoo Victoria 1" loading="lazy" class="carousel-img">
+                            <img src="img/Victoria/tatto (2).jpeg" alt="Tattoo Victoria 2" loading="lazy" class="carousel-img">
+                            <img src="img/Victoria/tatto (3).jpeg" alt="Tattoo Victoria 3" loading="lazy" class="carousel-img">
+                            <img src="img/Victoria/tatto (4).jpeg" alt="Tattoo Victoria 4" loading="lazy" class="carousel-img">
                         </div>
                     </div>
 
                     <div class="fade-up-artist">
-                        <a href="#contato" class="btn-primary mt-2">Agendar com Marcos</a>
+                        <a href="#contato" class="btn-primary mt-2">Agendar com Victoria</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Lemos) -->
+            <div class="artist-row">
+                <div class="artist-row-img img-reveal-artist">
+                    <img src="img/Lemos/profile.PNG" alt="Lemos" loading="lazy" class="parallax-img">
+                </div>
+                <div class="artist-row-info">
+                    <span class="specialty fade-up-artist">Geométrico & Pontilhismo</span>
+                    <h3 class="fade-up-artist">Lemos</h3>
+                    <p class="bio fade-up-artist">Simetria e precisão matemática. Cria padrões geométricos hipnotizantes utilizando técnicas avançadas de pontilhismo.</p>
+                    <div class="artist-tags fade-up-artist">
+                        <span>Geometria</span><span>Pontilhismo</span><span>Mandala</span>
+                    </div>
+                    
+                    <div class="artist-portfolio-carousel fade-up-artist">
+                        <h4 class="carousel-title">Trabalhos Recentes</h4>
+                        <div class="carousel-track custom-cursor-interactive">
+                            <img src="img/Lemos/tatto (1).jpeg" alt="Tattoo Lemos 1" loading="lazy" class="carousel-img">
+                            <img src="img/Lemos/tatto (2).jpeg" alt="Tattoo Lemos 2" loading="lazy" class="carousel-img">
+                            <img src="img/Lemos/tatto (3).jpeg" alt="Tattoo Lemos 3" loading="lazy" class="carousel-img">
+                            <img src="img/Lemos/tatto (4).jpeg" alt="Tattoo Lemos 4" loading="lazy" class="carousel-img">
+                        </div>
+                    </div>
+
+                    <div class="fade-up-artist">
+                        <a href="#contato" class="btn-primary mt-2">Agendar com Lemos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. Ana) -->
+            <div class="artist-row">
+                <div class="artist-row-img img-reveal-artist">
+                    <img src="img/Ana/profile.PNG" alt="Ana" loading="lazy" class="parallax-img">
+                </div>
+                <div class="artist-row-info">
+                    <span class="specialty fade-up-artist">Geométrico & Pontilhismo</span>
+                    <h3 class="fade-up-artist">Ana</h3>
+                    <p class="bio fade-up-artist">Simetria e precisão matemática. Cria padrões geométricos hipnotizantes utilizando técnicas avançadas de pontilhismo.</p>
+                    <div class="artist-tags fade-up-artist">
+                        <span>Geometria</span><span>Pontilhismo</span><span>Mandala</span>
+                    </div>
+                    
+                    <div class="artist-portfolio-carousel fade-up-artist">
+                        <h4 class="carousel-title">Trabalhos Recentes</h4>
+                        <div class="carousel-track custom-cursor-interactive">
+                            <img src="img/Ana/tatto (1).jpeg" alt="Tattoo Ana 1" loading="lazy" class="carousel-img">
+                            <img src="img/Ana/tatto (2).jpeg" alt="Tattoo Ana 2" loading="lazy" class="carousel-img">
+                            <img src="img/AnaLemos/tatto (3).jpeg" alt="Tattoo Ana 3" loading="lazy" class="carousel-img">
+                            <img src="img/Ana/tatto (4).jpeg" alt="Tattoo Ana 4" loading="lazy" class="carousel-img">
+                        </div>
+                    </div>
+
+                    <div class="fade-up-artist">
+                        <a href="#contato" class="btn-primary mt-2">Agendar com Ana</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. Helena) -->
+            <div class="artist-row">
+                <div class="artist-row-img img-reveal-artist">
+                    <img src="img/Helena/profile.PNG" alt="Helena" loading="lazy" class="parallax-img">
+                </div>
+                <div class="artist-row-info">
+                    <span class="specialty fade-up-artist">Geométrico & Pontilhismo</span>
+                    <h3 class="fade-up-artist">Helena</h3>
+                    <p class="bio fade-up-artist">Simetria e precisão matemática. Cria padrões geométricos hipnotizantes utilizando técnicas avançadas de pontilhismo.</p>
+                    <div class="artist-tags fade-up-artist">
+                        <span>Geometria</span><span>Pontilhismo</span><span>Mandala</span>
+                    </div>
+                    
+                    <div class="artist-portfolio-carousel fade-up-artist">
+                        <h4 class="carousel-title">Trabalhos Recentes</h4>
+                        <div class="carousel-track custom-cursor-interactive">
+                            <img src="img/Helena/tatto (1).jpeg" alt="Tattoo Helena 1" loading="lazy" class="carousel-img">
+                            <img src="img/Helena/tatto (2).jpeg" alt="Tattoo Helena 2" loading="lazy" class="carousel-img">
+                            <img src="img/Helena/tatto (3).jpeg" alt="Tattoo Helena 3" loading="lazy" class="carousel-img">
+                            <img src="img/Helena/tatto (4).jpeg" alt="Tattoo Helena 4" loading="lazy" class="carousel-img">
+                        </div>
+                    </div>
+
+                    <div class="fade-up-artist">
+                        <a href="#contato" class="btn-primary mt-2">Agendar com Helena</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. Gilliano) -->
+            <div class="artist-row">
+                <div class="artist-row-img img-reveal-artist">
+                    <img src="img/Gilliano/" alt="Gilliano" loading="lazy" class="parallax-img">
+                </div>
+                <div class="artist-row-info">
+                    <span class="specialty fade-up-artist">Geométrico & Pontilhismo</span>
+                    <h3 class="fade-up-artist">Gilliano</h3>
+                    <p class="bio fade-up-artist">Simetria e precisão matemática. Cria padrões geométricos hipnotizantes utilizando técnicas avançadas de pontilhismo.</p>
+                    <div class="artist-tags fade-up-artist">
+                        <span>Geometria</span><span>Pontilhismo</span><span>Mandala</span>
+                    </div>
+                    
+                    <div class="artist-portfolio-carousel fade-up-artist">
+                        <h4 class="carousel-title">Trabalhos Recentes</h4>
+                        <div class="carousel-track custom-cursor-interactive">
+                            <img src="img/Gilliano/tatto (1).jpeg" alt="Tattoo Gilliano 1" loading="lazy" class="carousel-img">
+                            <img src="img/Gilliano/tatto (2).jpeg" alt="Tattoo Gilliano 2" loading="lazy" class="carousel-img">
+                            <img src="img/Gilliano/tatto (3).jpeg" alt="Tattoo Gilliano 3" loading="lazy" class="carousel-img">
+                            <img src="img/Gilliano/tatto (4).jpeg" alt="Tattoo Gilliano 4" loading="lazy" class="carousel-img">
+                        </div>
+                    </div>
+
+                    <div class="fade-up-artist">
+                        <a href="#contato" class="btn-primary mt-2">Agendar com Gilliano</a>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,275 @@
+/* ===========================================
+   MIST TATTOTO - Estilo Responsivo
+   =========================================== */
+
+/* Variáveis de temas */
+:root {
+  --color-bg: var(--site-bg, #0f0f0f);
+  --color-text: var(--site-text, #ffffff);
+  --color-primary: var(--site-accent, #924F28);
+  --color-secondary: #5a2a14;
+  --color-border: #333;
+  --color-overlay: rgba(0, 0, 0, 0.9);
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ===========================================
+   GRID DE IMAGENS (Portfolio)
+   =========================================== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover img {
+  opacity: 0.9;
+}
+
+/* ===========================================
+   LIGHTBOX - Modal de visualização
+   =========================================== */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-overlay);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.lightbox.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.lightbox.active .lightbox-content {
+  transform: scale(1);
+}
+
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 4px;
+  display: block;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 0;
+  line-height: 1;
+}
+
+.lightbox-close:hover {
+  color: var(--color-primary);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.lightbox-close:hover {
+  color: var(--color-primary);
+}
+
+/* ===========================================
+   RESPONSIVO - Tabletes (768px)
+   =========================================== */
+@media screen and (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .gallery-item img {
+    height: 250px;
+  }
+
+  .lightbox-close {
+    top: -35px;
+    right: -10px;
+    font-size: 28px;
+  }
+}
+
+/* ===========================================
+   RESPONSIVO - Celulares (480px)
+   =========================================== */
+@media screen and (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 12px 8px;
+  }
+
+  .gallery-item img {
+    height: 220px;
+  }
+
+  .lightbox-close {
+    top: -30px;
+    right: -5px;
+    font-size: 24px;
+  }
+
+  .lightbox-lightbox {
+    border: none;
+  }
+
+  body {
+    padding-bottom: 20px;
+  }
+}
+
+/* ===========================================
+   MENU NA SCROLLBAR
+   =========================================== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-border);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary);
+}
+
+/* ===========================================
+   ANIMAÇÕES SUTILS
+   =========================================== */
+.fade-in {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ===========================================
+   CARDS DOS TATUADORES
+   =========================================== */
+.tattooers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.tattooer-card {
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tattooer-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.tattooer-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* ===========================================
+   FOOTER RESPONSIVO
+   =========================================== */
+.footer-content {
+  padding: 40px 20px;
+  max-width: var(--site-max-width, 1200px);
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    text-align: center;
+    padding: 30px 15px;
+  }
+}
