@@ -126,18 +126,6 @@ body {
   color: var(--color-primary);
 }
 
-.lightbox-close {
-  position: absolute;
-  top: -40px;
-  right: 0;
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 32px;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
 .lightbox-close:hover {
   color: var(--color-primary);
 }
@@ -154,12 +142,6 @@ body {
 
   .gallery-item img {
     height: 250px;
-  }
-
-  .lightbox-close {
-    top: -35px;
-    right: -10px;
-    font-size: 28px;
   }
 }
 
@@ -181,10 +163,6 @@ body {
     top: -30px;
     right: -5px;
     font-size: 24px;
-  }
-
-  .lightbox-lightbox {
-    border: none;
   }
 
   body {
