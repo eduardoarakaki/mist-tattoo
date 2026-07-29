@@ -1,0 +1,6 @@
+# Permite que todos os robôs acessem todas as páginas públicas
+User-agent: *
+Allow: /
+
+# Indica a localização do sitemap do seu site (substitua pelo seu domínio real)
+Sitemap: https://www.mist-tattoo.com.br.com.br/sitemap.xml
