@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Cliques no carrossel
-    document.querySelectorAll('.carousel-img').forEach(img => {
+    document.querySelectorAll('.carousel-img, .local-carousel-item img').forEach(img => {
         img.addEventListener('click', () => openModalWithImage(img.src, img.alt));
     });
 

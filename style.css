@@ -47,7 +47,7 @@ img { max-width: 100%; display: block; }
 a { text-decoration: none; color: inherit; }
 
 .container { max-width: 1400px; margin: 0 auto; padding: 0 5%; }
-.section { padding: 120px 0; }
+.section { padding: 60px 0; }
 .mt-2 { margin-top: 2rem; display: inline-block; }
 
 /* =========================================
@@ -346,6 +346,7 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 500; }
 .carousel-track::-webkit-scrollbar-thumb { background: #d4af37; border-radius: 4px; }
 
 .carousel-img {
+    margin-top: 5px;
     flex: 0 0 130px;
     height: 130px;
     object-fit: cover;
@@ -573,4 +574,140 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 500; }
     .gallery-grid { grid-template-columns: 1fr; }
     .filters { justify-content: center; width: 100%; }
     .btn-primary, .btn-secondary { width: 100%; text-align: center; }
+}
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366; /* Verde oficial do WhatsApp */
+  color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999; /* Garante que fique acima de tudo */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Feedback visual de Hover (Desktop) */
+.whatsapp-btn:hover {
+  background-color: #20ba5a;
+  transform: scale(1.1); /* Cresce levemente ao passar o mouse */
+}
+
+/* Feedback visual de Clique/Toque (Mobile) */
+.whatsapp-btn:active {
+  transform: scale(0.95);
+}
+
+/* Configuração do link pai */
+.instagram-bio-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px; 
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Configuração rigorosa para os clones do SVG aparecerem no fundo escuro */
+.instagram-icon {
+  width: 18px !important;
+  height: 18px !important;
+  display: inline-block !important;
+  flex-shrink: 0 !important;
+  pointer-events: none; /* Evita conflito de cliques com o use */
+}
+
+/* Injeta a cor diretamente dentro do Shadow DOM do clone */
+.instagram-icon use {
+  fill: #ffffff !important; 
+  transition: fill 0.3s ease;
+}
+
+/* Efeito de hover elegante */
+.instagram-bio-link:hover {
+  color: #c5a880; /* Cor dourada/bronze combinando com o tema premium */
+}
+
+.instagram-bio-link:hover .instagram-icon use {
+  fill: #c5a880 !important;
+}
+
+/* =========================================
+   NOVO CARROSSEL DA SEÇÃO LOCAL (ROW)
+========================================= */
+.local-carousel-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.local-carousel-track {
+    display: flex;
+    gap: 1.2rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 0 5% 1.5rem 5%;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-gold) rgba(255, 255, 255, 0.05);
+    -webkit-overflow-scrolling: touch;
+}
+
+.local-carousel-track::-webkit-scrollbar {
+    height: 6px;
+}
+
+.local-carousel-track::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 4px;
+}
+
+.local-carousel-track::-webkit-scrollbar-thumb {
+    background: var(--accent-gold);
+    border-radius: 4px;
+}
+
+.local-carousel-item {
+    margin-top: 5px;
+    flex: 0 0 300px; 
+    height: 400px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--surface-color);
+    scroll-snap-align: start;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: border-color 0.4s ease, transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s ease;
+}
+
+.local-carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: center center;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.local-carousel-item:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-gold);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.local-carousel-item:hover img {
+    transform: scale(1.04);
+}
+
+@media (max-width: 768px) {
+    .local-carousel-item {
+        flex: 0 0 260px;
+        height: 350px;
+    }
 }

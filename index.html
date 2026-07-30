@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIST TATTOO | Studio</title>
     <meta name="description" content="Estúdio de tatuagem de alto padrão. Arte, exclusividade e precisão.">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="preloader">
@@ -26,7 +30,7 @@
 
     <header class="header">
         <div class="logo">MIST TATTOO</div>
-        
+
         <button class="mobile-menu-btn" aria-label="Menu">
             <span class="line"></span>
             <span class="line"></span>
@@ -41,7 +45,7 @@
             <a href="#contato" class="nav-link">Contato</a>
             <a href="#contato" class="btn-nav nav-link mobile-only">Agendar</a>
         </nav>
-        
+
         <a href="#contato" class="btn-nav desktop-only">Agendar</a>
     </header>
 
@@ -53,15 +57,15 @@
                 <source src="video/mist-video.mp4" type="video/mp4">
                 <!-- Você pode adicionar um WebM como alternativa para carregar mais rápido no Chrome/Firefox -->
                 <!-- <source src="caminho/para/seu/video.webm" type="video/webm"> -->
-                
+
                 <!-- Fallback: se o navegador não suportar o vídeo, ele mostra a foto original -->
                 <img src="img/Gilliano/tatto (6).PNG" alt="Tattoo Studio">
             </video>
-            
+
             <!-- A overlay continua aqui para manter o sombreamento escuro sobre o vídeo e destacar os textos -->
             <div class="overlay"></div>
         </div>
-        
+
         <div class="hero-content">
             <h1 class="hero-title">A Arte na<br>Sua Pele</h1>
             <p class="hero-subtitle delay-1">Exclusividade, precisão e uma experiência inesquecível.</p>
@@ -75,11 +79,15 @@
         <div class="container about-grid">
             <div class="about-text">
                 <h2 class="section-title reveal-up">O Studio</h2>
-                    <p class="reveal-up">Mais do que um estúdio de tatuagem, somos um espaço plural dedicado à sua autoexpressão. Na Mist Tattoo, reunimos uma equipe de artistas especialistas nos mais diversos estilos — do realismo ao oriental e neotradicional — em um ambiente pensado para inspirar.</p>
-                    <p class="reveal-up">Nosso objetivo é conectar a sua ideia ao tatuador ideal para o seu projeto, trabalhando com agendamentos exclusivos para garantir a excelência e a dedicação que a sua arte merece.</p>   
+                <p class="reveal-up">Mais do que um estúdio de tatuagem, somos um espaço plural dedicado à sua
+                    autoexpressão. Na Mist Tattoo, reunimos uma equipe de artistas especialistas nos mais diversos
+                    estilos — do realismo ao oriental e neotradicional — em um ambiente pensado para inspirar.</p>
+                <p class="reveal-up">Nosso objetivo é conectar a sua ideia ao tatuador ideal para o seu projeto,
+                    trabalhando com agendamentos exclusivos para garantir a excelência e a dedicação que a sua arte
+                    merece.</p>
             </div>
             <div class="about-image img-reveal">
-                <img src="img/studio/studio (8).jpeg" alt="Interior do Studio" loading="lazy">
+                <img src="img/studio/studio_0.jpeg" alt="Interior do Studio" loading="lazy">
             </div>
         </div>
     </section>
@@ -96,24 +104,80 @@
                 </div> -->
             </div>
 
-            <div class="gallery-grid">
-                <div class="gallery-item reveal-up blackwork" 
-                     data-img="img/studio/studio (1).jpeg" 
-                     data-title="Sombras Noturnas" data-style="Blackwork" data-artist="Elena Rostova" data-desc="Composição fechada em braço utilizando alto contraste e preenchimento sólido.">
-                    <img src="img/studio/studio (2).jpeg" alt="Tattoo Blackwork" loading="lazy">
-                    <div class="item-overlay"><span>Ver Detalhes</span></div>
-                </div>
-                <div class="gallery-item reveal-up fine-line"
-                     data-img="img/studio/studio (3).jpeg" 
-                     data-title="Geometria Sagrada" data-style="Fine Line" data-artist="Arthur Pendragon" data-desc="Linhas finas e precisas construindo um design etéreo e minimalista.">
-                    <img src="img/studio/studio (4).jpeg" alt="Tattoo Fine Line" loading="lazy">
-                    <div class="item-overlay"><span>Ver Detalhes</span></div>
-                </div>
-                <div class="gallery-item reveal-up realismo"
-                     data-img="img/studio/studio (5).jpeg" 
-                     data-title="Olhar Felino" data-style="Realismo" data-artist="Marcos Silva" data-desc="Trabalho de realismo em preto e cinza com foco em texturas de pelo e brilho nos olhos.">
-                    <img src="img/studio/studio (6).jpeg" alt="Tattoo Realismo" loading="lazy">
-                    <div class="item-overlay"><span>Ver Detalhes</span></div>
+            <!-- Carrossel de Imagens do Local Otimizado (Row / Horizontal Scroll) -->
+            <div class="local-carousel-container reveal-up">
+                <div class="local-carousel-track custom-cursor-interactive">
+                    <div class="local-carousel-item" data-title="Área de Atendimento">
+                        <img src="img/studio/studio_1.jpeg" alt="Studio Local 1" loading="lazy">
+                    </div>
+                    <div class="local-carousel-item" data-title="Área de Atendimento">
+                        <img src="img/studio/studio_2.jpeg" alt="Studio Local 2" loading="lazy">
+                    </div>
+                    <div class="local-carousel-item" data-title="Área de Atendimento">
+                        <img src="img/studio/studio_3.jpeg" alt="Studio Local 3" loading="lazy">
+                    </div>
+                    <div class="local-carousel-item" data-title="Área de Atendimento">
+                        <img src="img/studio/studio_4.jpeg" alt="Studio Local 4" loading="lazy">
+                    </div>
+                    <div class="local-carousel-item" data-title="Área de Atendimento">
+                        <img src="img/studio/studio_5.jpeg" alt="Studio Local 5" loading="lazy">
+                    </div>
+                    <div class="local-carousel-item" data-title="Área de Atendimento">
+                        <img src="img/studio/studio_6.jpeg" alt="Studio Local 6" loading="lazy">
+                    </div>
+
+                    <div class="local-carousel-item" data-title="Área de Atendimento">
+                        <img src="img/studio/studio_7.jpeg" alt="Studio Local 7" loading="lazy">
+                    </div>
+
+                    <div class="local-carousel-item" data-title="Área de Atendimento">
+                        <img src="img/studio/studio_8.jpeg" alt="Studio Local 8" loading="lazy">
+                    </div>
+
+                    <div class="local-carousel-item" data-title="Área de Atendimento">
+                        <img src="img/studio/studio_9.jpeg" alt="Studio Local 9" loading="lazy">
+                    </div>
+
+                    <div class="local-carousel-item" data-title="Área de Atendimento">
+                        <img src="img/studio/studio_10.jpeg" alt="Studio Local 10" loading="lazy">
+                    </div>
+
+                    <div class="local-carousel-item" data-title="Área de Atendimento">
+                        <img src="img/studio/studio_11.jpeg" alt="Studio Local 11" loading="lazy">
+                    </div>
+
+                    <div class="local-carousel-item" data-title="Área de Atendimento">
+                        <img src="img/studio/studio_12.jpeg" alt="Studio Local 12" loading="lazy">
+                    </div>
+
+                    <div class="local-carousel-item" data-title="Área de Atendimento">
+                        <img src="img/studio/studio_13.jpeg" alt="Studio Local 13" loading="lazy">
+                    </div>
+
+                    <div class="local-carousel-item" data-title="Área de Atendimento">
+                        <img src="img/studio/studio_14.jpeg" alt="Studio Local 14" loading="lazy">
+                    </div>
+
+                    <div class="local-carousel-item" data-title="Área de Atendimento">
+                        <img src="img/studio/studio_15.jpeg" alt="Studio Local 15" loading="lazy">
+                    </div>
+
+                    <div class="local-carousel-item" data-title="Área de Atendimento">
+                        <img src="img/studio/studio_16.jpeg" alt="Studio Local 16" loading="lazy">
+                    </div>
+
+                    <div class="local-carousel-item" data-title="Área de Atendimento">
+                        <img src="img/studio/studio_17.jpeg" alt="Studio Local 17" loading="lazy">
+                    </div>
+
+                    <div class="local-carousel-item" data-title="Área de Atendimento">
+                        <img src="img/studio/studio_18.jpeg" alt="Studio Local 18" loading="lazy">
+                    </div>
+
+                    <div class="local-carousel-item" data-title="Área de Atendimento">
+                        <img src="img/studio/studio_19.jpeg" alt="Studio Local 19" loading="lazy">
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -123,77 +187,174 @@
         <h2 class="section-title reveal-up">Nossos Artistas</h2>
         <div class="artists-list">
 
+            <!-- 9. Gilliano) -->
+            <div class="artist-row">
+                <div class="artist-row-img img-reveal-artist">
+                    <img src="img/profile-gilliano/profile.jpeg" alt="Gilliano" loading="lazy" class="parallax-img">
+                </div>
+                <div class="artist-row-info">
+                    <span class="specialty fade-up-artist">Realismo & Neotradicional</span>
+                    <h3 class="fade-up-artist">Gilliano</h3>
+                    <p class="bio fade-up-artist">
+                        <a href="https://instagram.com/gilliano.tattoo" target="_blank" rel="noopener noreferrer"
+                            class="instagram-bio-link">
+                            <!-- Chamada limpa do elemento reutilizável -->
+                            <svg class="instagram-icon">
+                                <use href="#icon-instagram" />
+                            </svg>@gilliano.tattoo
+                        </a>
+                    </p>
+
+                    <div class="artist-portfolio-carousel fade-up-artist">
+                        <h4 class="carousel-title">Trabalhos Recentes</h4>
+                        <div class="carousel-track custom-cursor-interactive" data-scroll-amount="image">
+                            <img src="img/profile-gilliano/img_1.jpeg" alt="Tattoo Gilliano 1" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-gilliano/img_2.jpeg" alt="Tattoo Gilliano 2" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-gilliano/img_3.jpeg" alt="Tattoo Gilliano 3" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-gilliano/img_4.jpeg" alt="Tattoo Gilliano 4" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-gilliano/img_5.jpeg" alt="Tattoo Gilliano 5" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-gilliano/img_6.jpeg" alt="Tattoo Gilliano 6" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-gilliano/img_7.jpeg" alt="Tattoo Gilliano 7" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-gilliano/img_8.jpeg" alt="Tattoo Gilliano 8" loading="lazy"
+                                class="carousel-img">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- 1. Eduardo -->
             <div class="artist-row">
                 <div class="artist-row-img img-reveal-artist">
-                    <img src="img/Eduardo/profile.jpeg" alt="Eduardo" loading="lazy" class="parallax-img">
+                    <img src="img/profile-eduardo/profile.jpeg" alt="Eduardo" loading="lazy" class="parallax-img">
                 </div>
                 <div class="artist-row-info">
                     <span class="specialty fade-up-artist">Oriental</span>
-                    <h3 class="fade-up-artist">Eduardo</h3>
-                    <!-- <p class="bio fade-up-artist">Especialista em realismo fotográfico e texturas complexas, transformando ideias em obras de arte na pele com alto nível de detalhe.</p>
-                    <div class="artist-tags fade-up-artist">
-                        <span>Realismo</span><span>Sombras</span><span>Texturas</span>
-                    </div> -->
-                    
+                    <h3 class="fade-up-artist">Eduardo Nakassima</h3>
+                    <p class="bio fade-up-artist">
+                        <a href="https://instagram.com/eduardonakassima" target="_blank" rel="noopener noreferrer"
+                            class="instagram-bio-link">
+                            <!-- Chamada limpa do elemento reutilizável -->
+                            <svg class="instagram-icon">
+                                <use href="#icon-instagram" />
+                            </svg>@eduardonakassima
+                        </a>
+                    </p>
+
                     <!-- Carrossel de Portfólio (UX Nativo) -->
                     <div class="artist-portfolio-carousel fade-up-artist">
                         <h4 class="carousel-title">Trabalhos Recentes</h4>
                         <div class="carousel-track custom-cursor-interactive" data-scroll-amount="image">
-                            <img src="img/Eduardo/tatto (1).jpeg" alt="Tattoo Eduardo 1" loading="lazy" class="carousel-img">
-                            <img src="img/Eduardo/tatto (2).jpeg" alt="Tattoo Eduardo 2" loading="lazy" class="carousel-img">
-                            <img src="img/Eduardo/tatto (3).jpeg" alt="Tattoo Eduardo 3" loading="lazy" class="carousel-img">
-                            <img src="img/Eduardo/tatto (2).jpg" alt="Tattoo Eduardo 4" loading="lazy" class="carousel-img">
+                            <img src="img/profile-eduardo/img_1.jpeg" alt="Tattoo Eduardo 1" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-eduardo/img_2.jpeg" alt="Tattoo Eduardo 2" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-eduardo/img_3.jpeg" alt="Tattoo Eduardo 3" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-eduardo/img_4.jpeg" alt="Tattoo Eduardo 4" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-eduardo/img_5.jpeg" alt="Tattoo Eduardo 5" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-eduardo/img_6.jpeg" alt="Tattoo Eduardo 6" loading="lazy"
+                                class="carousel-img">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- 2. Isabela -->
+
+            <!-- 2. Lina -->
             <div class="artist-row">
                 <div class="artist-row-img img-reveal-artist">
-                    <img src="img/Isabela/profile.PNG" alt="Isabela" loading="lazy" class="parallax-img">
+                    <img src="img/profile-lina/profile.jpeg" alt="Lina" loading="lazy" class="parallax-img">
                 </div>
                 <div class="artist-row-info">
-                    <span class="specialty fade-up-artist">Fine Line & Minimalista</span>
+                    <span class="specialty fade-up-artist">Old School & Oriental</span>
+                    <h3 class="fade-up-artist">Lina Blumen</h3>
+                    <p class="bio fade-up-artist">
+                        <a href="https://instagram.com/linablumen" target="_blank" rel="noopener noreferrer"
+                            class="instagram-bio-link">
+                            <!-- Chamada limpa do elemento reutilizável -->
+                            <svg class="instagram-icon">
+                                <use href="#icon-instagram" />
+                            </svg>@linablumen
+                        </a>
+                    </p>
+
+                    <div class="artist-portfolio-carousel fade-up-artist">
+                        <h4 class="carousel-title">Trabalhos Recentes</h4>
+                        <div class="carousel-track custom-cursor-interactive" data-scroll-amount="image">
+                            <img src="img/profile-lina/img_1.jpeg" alt="Tattoo Lina 1" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-lina/img_2.jpeg" alt="Tattoo Lina 2" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-lina/img_3.jpeg" alt="Tattoo Lina 3" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-lina/img_4.jpeg" alt="Tattoo Lina 4" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-lina/img_5.jpeg" alt="Tattoo Lina 5" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-lina/img_6.jpeg" alt="Tattoo Lina 6" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-lina/img_7.jpeg" alt="Tattoo Lina 7" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-lina/img_8.jpeg" alt="Tattoo Lina 8" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-lina/img_9.jpeg" alt="Tattoo Lina 9" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-lina/img_10.jpeg" alt="Tattoo Lina 10" loading="lazy"
+                                class="carousel-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Isabela -->
+            <div class="artist-row">
+                <div class="artist-row-img img-reveal-artist">
+                    <img src="img/profile-isabela/profile.jpeg" alt="Isabela" loading="lazy" class="parallax-img">
+                </div>
+                <div class="artist-row-info">
+                    <span class="specialty fade-up-artist">Fine Line, Floral & Geométrico</span>
                     <h3 class="fade-up-artist">Isabela</h3>
-                    <!-- <p class="bio fade-up-artist">Traços finos e precisos. Especialista em florais, micro-realismo e designs delicados que acompanham a fluidez do corpo.</p>
-                    <div class="artist-tags fade-up-artist">
-                        <span>Fine Line</span><span>Botânica</span><span>Delicadeza</span>
-                    </div> -->
-                    
-                    <div class="artist-portfolio-carousel fade-up-artist">
-                        <h4 class="carousel-title">Trabalhos Recentes</h4>
-                        <div class="carousel-track custom-cursor-interactive" data-scroll-amount="image">
-                            <img src="img/Isabela/tatto (1).PNG" alt="Tattoo Isabela 1" loading="lazy" class="carousel-img">
-                            <img src="img/Isabela/tatto (3).PNG" alt="Tattoo Isabela 2" loading="lazy" class="carousel-img">
-                            <img src="img/Isabela/tatto (4).PNG" alt="Tattoo Isabela 3" loading="lazy" class="carousel-img">
-                            <img src="img/Isabela/tatto (5).PNG" alt="Tattoo Isabela 4" loading="lazy" class="carousel-img">
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    <p class="bio fade-up-artist">
+                        <a href="https://instagram.com/isabelafeboli" target="_blank" rel="noopener noreferrer"
+                            class="instagram-bio-link">
+                            <!-- Chamada limpa do elemento reutilizável -->
+                            <svg class="instagram-icon">
+                                <use href="#icon-instagram" />
+                            </svg>@isabelafeboli
+                        </a>
+                    </p>
 
-            <!-- 3. Lina -->
-            <div class="artist-row">
-                <div class="artist-row-img img-reveal-artist">
-                    <img src="img/Lina/profile.jpeg" alt="Lina" loading="lazy" class="parallax-img">
-                </div>
-                <div class="artist-row-info">
-                    <span class="specialty fade-up-artist">Oriental & Neotradicional</span>
-                    <h3 class="fade-up-artist">Lina</h3>
-                    <!-- <p class="bio fade-up-artist">Cores sólidas e linhas marcantes. Combina a forte tradição da tatuagem oriental com uma visão moderna e neotradicional.</p>
-                    <div class="artist-tags fade-up-artist">
-                        <span>Irezumi</span><span>Cores Sólidas</span><span>Neotrad</span>
-                    </div> -->
-                    
                     <div class="artist-portfolio-carousel fade-up-artist">
                         <h4 class="carousel-title">Trabalhos Recentes</h4>
                         <div class="carousel-track custom-cursor-interactive" data-scroll-amount="image">
-                            <img src="img/Lina/tatto (1).jpg" alt="Tattoo Lina 1" loading="lazy" class="carousel-img">
-                            <img src="img/Lina/tatto (2).jpeg" alt="Tattoo Lina 2" loading="lazy" class="carousel-img">
-                            <img src="img/Lina/tatto (3).jpeg" alt="Tattoo Lina 3" loading="lazy" class="carousel-img">
-                            <img src="img/Lina/tatto (9).jpeg" alt="Tattoo Lina 4" loading="lazy" class="carousel-img">
+                            <img src="img/profile-isabela/img_1.jpeg" alt="Tattoo Isabela 1" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-isabela/img_2.jpeg" alt="Tattoo Isabela 2" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-isabela/img_3.jpeg" alt="Tattoo Isabela 3" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-isabela/img_4.jpeg" alt="Tattoo Isabela 4" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-isabela/img_5.jpeg" alt="Tattoo Isabela 5" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-isabela/img_6.jpeg" alt="Tattoo Isabela 6" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-isabela/img_7.jpeg" alt="Tattoo Isabela 7" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-isabela/img_8.jpeg" alt="Tattoo Isabela 8" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-isabela/img_9.jpeg" alt="Tattoo Isabela 9" loading="lazy"
+                                class="carousel-img">
                         </div>
                     </div>
                 </div>
@@ -202,47 +363,74 @@
             <!-- 4. Guilherme -->
             <div class="artist-row">
                 <div class="artist-row-img img-reveal-artist">
-                    <img src="img/Guilherme/profile.PNG" alt="Guilherme" loading="lazy" class="parallax-img">
+                    <img src="img/profile-villa/profile.jpeg" alt="Guilherme" loading="lazy" class="parallax-img">
                 </div>
                 <div class="artist-row-info">
-                    <span class="specialty fade-up-artist">Old School & Tribal</span>
-                    <h3 class="fade-up-artist">Guilherme</h3>
-                    <!-- <p class="bio fade-up-artist">Mestre em sombras, contrastes extremos e fechamentos de corpo. Sua arte explora o lado mais sombrio e texturizado do Blackwork.</p>
-                    <div class="artist-tags fade-up-artist">
-                        <span>Blackwork</span><span>Dark Art</span><span>Alto Contraste</span>
-                    </div> -->
-                    
+                    <span class="specialty fade-up-artist">Tribal & Old School</span>
+                    <h3 class="fade-up-artist">Guilherme Villa</h3>
+                    <p class="bio fade-up-artist">
+                        <a href="https://instagram.com/villa.gui" target="_blank" rel="noopener noreferrer"
+                            class="instagram-bio-link">
+                            <!-- Chamada limpa do elemento reutilizável -->
+                            <svg class="instagram-icon">
+                                <use href="#icon-instagram" />
+                            </svg>@villa.gui
+                        </a>
+                    </p>
+
                     <div class="artist-portfolio-carousel fade-up-artist">
                         <h4 class="carousel-title">Trabalhos Recentes</h4>
                         <div class="carousel-track custom-cursor-interactive" data-scroll-amount="image">
-                            <img src="img/Guilherme/tatto (2).PNG" alt="Tattoo Guilherme 1" loading="lazy" class="carousel-img">
-                            <img src="img/Guilherme/tatto (3).PNG" alt="Tattoo Guilherme 2" loading="lazy" class="carousel-img">
-                            <img src="img/Guilherme/tatto (4).PNG" alt="Tattoo Guilherme 3" loading="lazy" class="carousel-img">
-                            <img src="img/Guilherme/tatto (5).PNG" alt="Tattoo Guilherme 4" loading="lazy" class="carousel-img">
+                            <img src="img/profile-villa/img_1.jpeg" alt="Tattoo Villa 1" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-villa/img_2.jpeg" alt="Tattoo Villa 2" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-villa/img_3.jpeg" alt="Tattoo Villa 3" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-villa/img_4.jpeg" alt="Tattoo Villa 4" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-villa/img_5.jpeg" alt="Tattoo Villa 5" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-villa/img_6.jpeg" alt="Tattoo Villa 6" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-villa/img_7.jpeg" alt="Tattoo Villa 7" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-villa/img_8.jpeg" alt="Tattoo Villa 8" loading="lazy"
+                                class="carousel-img">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- 5. Victoria) -->
+            <!-- 5. Ana) -->
             <div class="artist-row">
                 <div class="artist-row-img img-reveal-artist">
-                    <img src="img/Victoria/profile.PNG" alt="Victoria" loading="lazy" class="parallax-img">
+                    <img src="img/profile-ana/profile.jpeg" alt="Ana" loading="lazy" class="parallax-img">
                 </div>
                 <div class="artist-row-info">
-                    <span class="specialty fade-up-artist">Geométrico & Pontilhismo</span>
-                    <h3 class="fade-up-artist">Victoria</h3>
-                    <!-- <p class="bio fade-up-artist">Simetria e precisão matemática. Cria padrões geométricos hipnotizantes utilizando técnicas avançadas de pontilhismo.</p>
-                    <div class="artist-tags fade-up-artist">
-                        <span>Geometria</span><span>Pontilhismo</span><span>Mandala</span>
-                    </div> -->
-                    
+                    <span class="specialty fade-up-artist">Neotradicional & Surrealismo</span>
+                    <h3 class="fade-up-artist">Ana</h3>
+                    <p class="bio fade-up-artist">
+                        <a href="https://instagram.com/anapaziini" target="_blank" rel="noopener noreferrer"
+                            class="instagram-bio-link">
+                            <!-- Chamada limpa do elemento reutilizável -->
+                            <svg class="instagram-icon">
+                                <use href="#icon-instagram" />
+                            </svg>@anapaziini
+                        </a>
+                    </p>
+
                     <div class="artist-portfolio-carousel fade-up-artist">
                         <h4 class="carousel-title">Trabalhos Recentes</h4>
                         <div class="carousel-track custom-cursor-interactive" data-scroll-amount="image">
-                            <img src="img/Victoria/tatto (1).jpeg" alt="Tattoo Victoria 1" loading="lazy" class="carousel-img">
-                            <img src="img/Victoria/tatto (1).PNG" alt="Tattoo Victoria 2" loading="lazy" class="carousel-img">
-                            <img src="img/Victoria/tatto (2).jpeg" alt="Tattoo Victoria 3" loading="lazy" class="carousel-img">
+                            <img src="img/profile-ana/img_1.PNG" alt="Tattoo Ana 1" loading="lazy" class="carousel-img"
+                                data-modal="#modal-ana-1">
+                            <img src="img/profile-ana/img_2.PNG" alt="Tattoo Ana 2" loading="lazy" class="carousel-img"
+                                data-modal="#modal-ana-1">
+                            <img src="img/profile-ana/img_3.PNG" alt="Tattoo Ana 3" loading="lazy" class="carousel-img"
+                                data-modal="#modal-ana-1">
+                            <img src="img/profile-ana/img_4.PNG" alt="Tattoo Ana 4" loading="lazy" class="carousel-img"
+                                data-modal="#modal-ana-1">
                         </div>
                     </div>
                 </div>
@@ -251,48 +439,70 @@
             <!-- 6. Lemos) -->
             <div class="artist-row">
                 <div class="artist-row-img img-reveal-artist">
-                    <img src="img/Lemos/profile.PNG" alt="Lemos" loading="lazy" class="parallax-img">
+                    <img src="img/profile-lemos/profile.jpeg" alt="Lemos" loading="lazy" class="parallax-img">
                 </div>
                 <div class="artist-row-info">
-                    <span class="specialty fade-up-artist">Geométrico & Pontilhismo</span>
-                    <h3 class="fade-up-artist">Lemos</h3>
-                    <!-- <p class="bio fade-up-artist">Simetria e precisão matemática. Cria padrões geométricos hipnotizantes utilizando técnicas avançadas de pontilhismo.</p>
-                    <div class="artist-tags fade-up-artist">
-                        <span>Geometria</span><span>Pontilhismo</span><span>Mandala</span>
-                    </div> -->
-                    
+                    <span class="specialty fade-up-artist">Neotradicional & Lettering</span>
+                    <h3 class="fade-up-artist">Guilherme Lemos</h3>
+                    <p class="bio fade-up-artist">
+                        <a href="https://instagram.com/uno.gui" target="_blank" rel="noopener noreferrer"
+                            class="instagram-bio-link">
+                            <!-- Chamada limpa do elemento reutilizável -->
+                            <svg class="instagram-icon">
+                                <use href="#icon-instagram" />
+                            </svg>@uno.gui
+                        </a>
+                    </p>
+
                     <div class="artist-portfolio-carousel fade-up-artist">
                         <h4 class="carousel-title">Trabalhos Recentes</h4>
                         <div class="carousel-track custom-cursor-interactive" data-scroll-amount="image">
-                            <img src="img/Lemos/tatto (2).PNG" alt="Tattoo Lemos 1" loading="lazy" class="carousel-img">
-                            <img src="img/Lemos/tatto (3).PNG" alt="Tattoo Lemos 2" loading="lazy" class="carousel-img">
-                            <img src="img/Lemos/tatto (4).PNG" alt="Tattoo Lemos 3" loading="lazy" class="carousel-img">
-                            <img src="img/Lemos/tatto (5).PNG" alt="Tattoo Lemos 4" loading="lazy" class="carousel-img">
+                            <img src="img/profile-lemos/img_1.jpeg" alt="Tattoo Lemos 1" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-lemos/img_2.jpeg" alt="Tattoo Lemos 2" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-lemos/img_3.jpeg" alt="Tattoo Lemos 3" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-lemos/img_4.jpeg" alt="Tattoo Lemos 4" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-lemos/img_5.jpeg" alt="Tattoo Lemos 5" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-lemos/img_6.jpeg" alt="Tattoo Lemos 6" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-lemos/img_7.jpeg" alt="Tattoo Lemos 7" loading="lazy"
+                                class="carousel-img">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- 7. Ana) -->
+            <!-- 7. Victoria) -->
             <div class="artist-row">
                 <div class="artist-row-img img-reveal-artist">
-                    <img src="img/Ana/profile.PNG" alt="Ana" loading="lazy" class="parallax-img">
+                    <img src="img/profile-victoria/profile.jpeg" alt="Victoria" loading="lazy" class="parallax-img">
                 </div>
                 <div class="artist-row-info">
-                    <span class="specialty fade-up-artist">Geométrico & Pontilhismo</span>
-                    <h3 class="fade-up-artist">Ana</h3>
-                    <!-- <p class="bio fade-up-artist">Simetria e precisão matemática. Cria padrões geométricos hipnotizantes utilizando técnicas avançadas de pontilhismo.</p>
-                    <div class="artist-tags fade-up-artist">
-                        <span>Geometria</span><span>Pontilhismo</span><span>Mandala</span>
-                    </div> -->
-                    
+                    <span class="specialty fade-up-artist">Anime, Geek & Fine Line</span>
+                    <h3 class="fade-up-artist">Victoria</h3>
+                    <p class="bio fade-up-artist">
+                        <a href="https://instagram.com/vicktattoox" target="_blank" rel="noopener noreferrer"
+                            class="instagram-bio-link">
+                            <!-- Chamada limpa do elemento reutilizável -->
+                            <svg class="instagram-icon">
+                                <use href="#icon-instagram" />
+                            </svg>@vicktattoox
+                        </a>
+                    </p>
+
                     <div class="artist-portfolio-carousel fade-up-artist">
                         <h4 class="carousel-title">Trabalhos Recentes</h4>
                         <div class="carousel-track custom-cursor-interactive" data-scroll-amount="image">
-                            <img src="img/Ana/tatto (1).PNG" alt="Tattoo Ana 1" loading="lazy" class="carousel-img" data-modal="#modal-ana-1">
-                            <img src="img/Ana/tatto (2).PNG" alt="Tattoo Ana 2" loading="lazy" class="carousel-img" data-modal="#modal-ana-2">
-                            <img src="img/Ana/tatto (3).PNG" alt="Tattoo Ana 3" loading="lazy" class="carousel-img" data-modal="#modal-ana-3">
-                            <img src="img/Ana/tatto (4).PNG" alt="Tattoo Ana 4" loading="lazy" class="carousel-img" data-modal="#modal-ana-4">
+                            <img src="img/profile-victoria/img_1.jpeg" alt="Tattoo Victoria 1" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-victoria/img_2.jpeg" alt="Tattoo Victoria 2" loading="lazy"
+                                class="carousel-img">
+                            <img src="img/profile-victoria/img_3.jpeg" alt="Tattoo Victoria 3" loading="lazy"
+                                class="carousel-img">
                         </div>
                     </div>
                 </div>
@@ -301,60 +511,43 @@
             <!-- 8. Helena) -->
             <div class="artist-row">
                 <div class="artist-row-img img-reveal-artist">
-                    <img src="img/Helena/profile.PNG" alt="Helena" loading="lazy" class="parallax-img">
+                    <img src="img/profile-helena/profile.jpeg" alt="Helena" loading="lazy" class="parallax-img">
                 </div>
                 <div class="artist-row-info">
-                    <span class="specialty fade-up-artist">Geométrico & Pontilhismo</span>
-                    <h3 class="fade-up-artist">Helena</h3>
-                    <!-- <p class="bio fade-up-artist">Simetria e precisão matemática. Cria padrões geométricos hipnotizantes utilizando técnicas avançadas de pontilhismo.</p>
-                    <div class="artist-tags fade-up-artist">
-                        <span>Geometria</span><span>Pontilhismo</span><span>Mandala</span>
-                    </div> -->
-                    
+                    <span class="specialty fade-up-artist">Old School</span>
+                    <h3 class="fade-up-artist">Helena Nigro</h3>
+                    <p class="bio fade-up-artist">
+                        <a href="https://instagram.com/helenanigro" target="_blank" rel="noopener noreferrer"
+                            class="instagram-bio-link">
+                            <!-- Chamada limpa do elemento reutilizável -->
+                            <svg class="instagram-icon">
+                                <use href="#icon-instagram" />
+                            </svg>@helenanigro
+                        </a>
+                    </p>
+
+
                     <div class="artist-portfolio-carousel fade-up-artist">
                         <h4 class="carousel-title">Trabalhos Recentes</h4>
                         <div class="carousel-track custom-cursor-interactive">
-                            <img src="img/Helena/tatto (1).PNG" alt="Tattoo Helena 1" loading="lazy" class="carousel-img" data-modal="#modal-helena-1">
-                            <img src="img/Helena/tatto (2).PNG" alt="Tattoo Helena 2" loading="lazy" class="carousel-img" data-modal="#modal-helena-2">
-                            <img src="img/Helena/tatto (3).PNG" alt="Tattoo Helena 3" loading="lazy" class="carousel-img" data-modal="#modal-helena-3">
-                            <img src="img/Helena/tatto (4).PNG" alt="Tattoo Helena 4" loading="lazy" class="carousel-img" data-modal="#modal-helena-4">
+                            <img src="img/profile-helena/img_1.jpeg" alt="Tattoo Helena 1" loading="lazy"
+                                class="carousel-img" data-modal="#modal-helena-1">
+                            <img src="img/profile-helena/img_2.jpeg" alt="Tattoo Helena 2" loading="lazy"
+                                class="carousel-img" data-modal="#modal-helena-2">
+                            <img src="img/profile-helena/img_3.jpeg" alt="Tattoo Helena 3" loading="lazy"
+                                class="carousel-img" data-modal="#modal-helena-3">
+                            <img src="img/profile-helena/img_4.jpeg" alt="Tattoo Helena 4" loading="lazy"
+                                class="carousel-img" data-modal="#modal-helena-4">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- 9. Gilliano) -->
-            <div class="artist-row">
-                <div class="artist-row-img img-reveal-artist">
-                    <img src="img/Gilliano/profile.PNG" alt="Gilliano" loading="lazy" class="parallax-img">
-                </div>
-                <div class="artist-row-info">
-                    <span class="specialty fade-up-artist">Geométrico & Pontilhismo</span>
-                    <h3 class="fade-up-artist">Gilliano</h3>
-                    <!-- <p class="bio fade-up-artist">Simetria e precisão matemática. Cria padrões geométricos hipnotizantes utilizando técnicas avançadas de pontilhismo.</p>
-                    <div class="artist-tags fade-up-artist">
-                        <span>Geometria</span><span>Pontilhismo</span><span>Mandala</span>
-                    </div> -->
-                    
-                    <div class="artist-portfolio-carousel fade-up-artist">
-                        <h4 class="carousel-title">Trabalhos Recentes</h4>
-                        <div class="carousel-track custom-cursor-interactive" data-scroll-amount="image">
-                            <img src="img/Gilliano/tattoos/img-2.PNG" alt="Tattoo Gilliano 2" loading="lazy" class="carousel-img">
-                            <img src="img/Gilliano/tattoos/img-3.PNG" alt="Tattoo Gilliano 3" loading="lazy" class="carousel-img">
-                            <img src="img/Gilliano/tattoos/img-4.PNG" alt="Tattoo Gilliano 4" loading="lazy" class="carousel-img">
-                            <img src="img/Gilliano/tattoos/img-5.PNG" alt="Tattoo Gilliano 5" loading="lazy" class="carousel-img">
-                            <img src="img/Gilliano/tattoos/img-6.PNG" alt="Tattoo Gilliano 6" loading="lazy" class="carousel-img">
-                            <img src="img/Gilliano/tattoos/img-7.PNG" alt="Tattoo Gilliano 7" loading="lazy" class="carousel-img">
-                            <img src="img/Gilliano/tattoos/img-8.jpeg" alt="Tattoo Gilliano 8" loading="lazy" class="carousel-img">
-                            <img src="img/Gilliano/tattoos/img-9.jpeg" alt="Tattoo Gilliano 9" loading="lazy" class="carousel-img">
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
         </div>
     </div>
-</section>
+    </section>
 
     <!-- <section id="eventos" class="section events">
         <div class="container">
@@ -380,7 +573,8 @@
         <div class="container contact-grid">
             <div class="contact-info reveal-up">
                 <h2 class="section-title">Agende sua Sessão</h2>
-                <p>Nossa equipe está pronta para transformar sua ideia em realidade. Entre em contato para consultas e orçamentos.</p>
+                <p>Nossa equipe está pronta para transformar sua ideia em realidade. Entre em contato para consultas e
+                    orçamentos.</p>
                 <ul class="contact-list">
                     <li><strong>WhatsApp:</strong> +55 14 99143-0996</li>
                     <li><strong>Instagram:</strong> @mist.tattoos</li>
@@ -389,9 +583,11 @@
                 <!-- <a href="#" class="btn-primary mt-2">Iniciar Atendimento</a> -->
             </div>
 
-<div class="contact-map reveal-up delay-1">
-    <iframe src="https://maps.google.com/maps?q=MIST+TATTOO,+Mar%C3%ADlia&hl=pt-BR&z=17&output=embed" width="100%" height="100%" style="border:0; min-height: 350px; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
-</div>
+            <div class="contact-map reveal-up delay-1">
+                <iframe src="https://maps.google.com/maps?q=MIST+TATTOO,+Mar%C3%ADlia&hl=pt-BR&z=17&output=embed"
+                    width="100%" height="100%" style="border:0; min-height: 350px; border-radius: 8px;"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
     </section>
 
     <footer class="footer">
@@ -430,7 +626,7 @@
         </div>
     </div>
 
-     <!-- MODAL APENAS IMAGEM (PARA CARROSSÉIS E GALERIA) -->
+    <!-- MODAL APENAS IMAGEM (PARA CARROSSÉIS E GALERIA) -->
     <div id="image-modal" class="modal">
         <div class="modal-backdrop"></div>
         <div class="modal-content modal-image-only">
@@ -439,10 +635,31 @@
         </div>
     </div>
 
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5514991430996?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20orçamentos%20e%20agendamentos%20na%20Mist%20Tattoo." class="whatsapp-btn" target="_blank" rel="noopener noreferrer"
+        aria-label="Falar com o suporte no WhatsApp">
+        <!-- Ícone SVG Oficial do WhatsApp (Garante carregamento instantâneo) -->
+        <svg xmlns="http://w3.org" viewBox="0 0 448 512" width="30" height="30" fill="currentColor">
+            <path
+                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+        </svg>
+    </a>
+
+    <svg xmlns="http://w3.org" width="0" height="0" style="position: absolute; overflow: hidden;">
+        <defs>
+            <!-- Incluímos o viewBox original direto no símbolo para o clone saber a proporção -->
+            <symbol id="icon-instagram" viewBox="0 0 448 512">
+                <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.8 9.9 67.6 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM402.4 344.2c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-135.9 9s-106.4 2.6-135.9-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-135.9s-2.6-106.4 9-135.9c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 135.9-9s106.4-2.6 135.9 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 135.9s2.7 106.4-9 135.9z" />
+            </symbol>
+        </defs>
+    </svg>
+
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
-    
+
 </body>
+
 </html>
