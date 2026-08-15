@@ -133,4 +133,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+
+    // Fix autoplay muted
+    document.addEventListener("DOMContentLoaded", function() {
+        var video = document.querySelector("video");
+        if (video) {
+            video.muted = true;
+            video.defaultMuted = true;
+            video.play().catch(function(error) {
+                console.log("Autoplay bloqueado pelo Chrome: ", error);
+            })
+        }
+    });
+
 });
