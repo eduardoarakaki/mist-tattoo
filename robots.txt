@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Indica a localização do sitemap do seu site (substitua pelo seu domínio real)
-Sitemap: https://www.mist-tattoo.com.br.com.br/sitemap.xml
+Sitemap: https://www.misttattoo.com.br.com.br/sitemap.xml
